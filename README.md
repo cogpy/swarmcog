@@ -1,11 +1,101 @@
 ![Swarm Logo](assets/logo.png)
 
-# Swarm (experimental, educational)
+# SwarmCog: Autonomous Multi-Agent Orchestration Framework
 
-> [!IMPORTANT]
-> Swarm is now replaced by the [OpenAI Agents SDK](https://github.com/openai/openai-agents-python), which is a production-ready evolution of Swarm. The Agents SDK features key improvements and will be actively maintained by the OpenAI team.
->
-> We recommend migrating to the Agents SDK for all production use cases.
+**SwarmCog** is an OpenCog-inspired autonomous multi-agent orchestration framework that extends the original Swarm framework with advanced cognitive capabilities. It enables agents to reason autonomously, build trust relationships, share knowledge, and coordinate complex multi-agent tasks using cognitive AI principles.
+
+## 🧠 Key Features
+
+- **🤖 Cognitive Agents**: Autonomous reasoning, learning, and coordination
+- **🌐 AgentSpace**: OpenCog-inspired knowledge representation system  
+- **⚡ Cognitive Microkernel**: Multi-phase cognitive processing pipeline
+- **🤝 Trust Networks**: Dynamic trust relationship building
+- **📚 Knowledge Sharing**: Collaborative learning and information exchange
+- **🎯 Goal-Oriented**: Autonomous goal decomposition and planning
+- **🔄 Adaptive Behavior**: Continuous learning from experiences
+- **📊 System Monitoring**: Real-time topology and performance analysis
+
+## 🚀 Quick Start
+
+### Basic SwarmCog Usage
+
+```python
+from swarm import create_swarmcog, ProcessingMode
+
+# Create SwarmCog system
+swarmcog = create_swarmcog(
+    agentspace_name="research_lab",
+    processing_mode=ProcessingMode.ASYNCHRONOUS
+)
+
+# Create cognitive agents
+researcher = swarmcog.create_cognitive_agent(
+    name="Dr_Alice",
+    capabilities=["research", "analysis", "collaboration"],
+    goals=["solve_complex_problems", "mentor_team"],
+    initial_beliefs={"domain": "AI_research", "experience": "expert"}
+)
+
+analyst = swarmcog.create_cognitive_agent(
+    name="Dr_Bob", 
+    capabilities=["data_analysis", "machine_learning"],
+    goals=["analyze_data", "build_models"]
+)
+
+# Establish trust and coordinate
+researcher.establish_trust("Dr_Bob", 0.8)
+researcher.coordinate_with_agent("Dr_Bob", "joint_research")
+
+# Run autonomous multi-agent coordination
+await swarmcog.start_autonomous_processing()
+```
+
+### Advanced Cognitive Features
+
+```python
+# Agent reasoning and planning
+reasoning = researcher.reason_about_goals()
+collaboration_plan = researcher.plan_collaboration("research_project")
+
+# Knowledge sharing
+researcher.share_knowledge(
+    "research_methods", 
+    {"techniques": ["analysis", "modeling"], "tools": ["python", "tensorflow"]},
+    target_agent="Dr_Bob"
+)
+
+# Find collaborators based on capabilities and trust
+collaborators = researcher.find_collaborators("machine_learning")
+
+# System analysis
+topology = swarmcog.get_swarm_topology()
+interactions = swarmcog.get_agent_interactions()
+```
+
+## 🏗️ Architecture
+
+SwarmCog implements a three-layer cognitive architecture:
+
+### 1. AgentSpace (Agentic AtomSpace)
+- **Knowledge Representation**: Unified graph-based knowledge system
+- **Atoms & Links**: Agents, capabilities, goals, beliefs, relationships
+- **Truth Values**: Uncertainty handling with strength and confidence  
+- **Attention Values**: Cognitive resource allocation
+
+### 2. Cognitive Microkernel  
+- **7-Phase Cognitive Cycle**: Perception → Attention → Reasoning → Planning → Execution → Learning → Reflection
+- **Processing Modes**: Synchronous, Asynchronous, Distributed
+- **Autonomous Coordination**: Self-organizing multi-agent behavior
+
+### 3. Cognitive Agents
+- **Autonomous Reasoning**: Independent decision making and planning
+- **Trust Management**: Dynamic relationship building
+- **Memory Systems**: Experience-based learning and adaptation
+- **Social Cognition**: Understanding and modeling other agents
+
+## 📋 Original Swarm Compatibility
+
+SwarmCog maintains full backward compatibility with the original Swarm framework:
 
 ## Install
 
@@ -87,6 +177,12 @@ Swarm explores patterns that are lightweight, scalable, and highly customizable 
 The Assistants API is a great option for developers looking for fully-hosted threads and built in memory management and retrieval. However, Swarm is an educational resource for developers curious to learn about multi-agent orchestration. Swarm runs (almost) entirely on the client and, much like the Chat Completions API, does not store state between calls.
 
 # Examples
+
+## 🧠 SwarmCog Examples
+
+- [`cognitive_research_team`](examples/cognitive_research_team.py): **Autonomous Multi-Agent Research Team** - Demonstrates cognitive agents collaborating on research projects with trust building, knowledge sharing, and autonomous coordination
+
+## 📚 Original Swarm Examples
 
 Check out `/examples` for inspiration! Learn more about each one in its README.
 
@@ -347,7 +443,112 @@ from swarm.repl import run_demo_loop
 run_demo_loop(agent, stream=True)
 ```
 
-# Core Contributors
+# SwarmCog API Reference
+
+## Core Classes
+
+### SwarmCog
+Main orchestration system for cognitive multi-agent coordination.
+
+```python
+from swarm import SwarmCog, SwarmCogConfig, ProcessingMode
+
+# Configuration
+config = SwarmCogConfig(
+    processing_mode=ProcessingMode.ASYNCHRONOUS,
+    agentspace_name="my_swarm",
+    max_agents=20,
+    cognitive_cycle_interval=1.0
+)
+
+swarmcog = SwarmCog(config)
+
+# Agent Management
+agent = swarmcog.create_cognitive_agent(name, capabilities, goals, beliefs)
+swarmcog.remove_agent(name)
+agents = swarmcog.list_agents()
+
+# Task Coordination  
+task = swarmcog.coordinate_multi_agent_task(description, agents, strategy)
+
+# System Monitoring
+topology = swarmcog.get_swarm_topology()
+status = swarmcog.get_system_status()
+interactions = swarmcog.get_agent_interactions()
+
+# Autonomous Operation
+await swarmcog.start_autonomous_processing()
+results = await swarmcog.simulate_autonomous_behavior(duration)
+await swarmcog.stop_autonomous_processing()
+```
+
+### CognitiveAgent
+Enhanced agent with autonomous cognitive capabilities.
+
+```python
+from swarm import CognitiveAgent
+
+agent = CognitiveAgent(name, capabilities, goals, initial_beliefs)
+
+# Capability Management
+agent.add_capability(name, description, strength)
+agent.add_goal(goal, priority)
+agent.update_belief(name, value)
+agent.add_memory(type, content, importance)
+
+# Cognitive Functions
+agent.perceive_environment()
+agent.reason_about_goals()
+agent.plan_collaboration(goal)
+agent.find_collaborators(capability_needed)
+agent.establish_trust(agent_name, trust_level)
+agent.share_knowledge(type, content, target)
+agent.coordinate_with_agent(agent_name, type)
+
+# State Management
+state = agent.get_cognitive_state()
+collaborators = agent.get_collaborators()
+trust_levels = agent.get_trust_levels()
+```
+
+### AgentSpace
+Knowledge representation system for multi-agent coordination.
+
+```python  
+from swarm import AgentSpace, AtomType
+
+agentspace = AgentSpace("space_name")
+
+# Agent Management
+agent_node = agentspace.add_agent_node(name, capabilities)
+agents = agentspace.get_agents()
+
+# Relationship Management
+collab_link = agentspace.add_collaboration_link(agent1, agent2, type)
+trust_link = agentspace.add_trust_relationship(agent1, agent2, level)
+
+# Query Operations
+atoms = agentspace.find_atoms(atom_type, name)
+collaborators = agentspace.get_collaborators(agent)
+trust_level = agentspace.get_trust_level(agent1, agent2)
+important_atoms = agentspace.get_most_important_atoms(limit)
+```
+
+## 📖 Documentation
+
+- [SwarmCog Architecture Guide](docs/SwarmCog_Architecture.md)
+- [Cognitive Research Team Example](examples/cognitive_research_team.py)
+- API Documentation: See source code docstrings
+
+## 🤝 Contributing
+
+SwarmCog builds upon the original Swarm framework. Contributions welcome for:
+- Advanced cognitive processing algorithms
+- New cognitive agent types and capabilities  
+- Performance optimizations and scalability improvements
+- Additional examples and use cases
+
+# Original Swarm Contributors
 
 - Ilan Bigio - [ibigio](https://github.com/ibigio)
 - James Hills - [jhills20](https://github.com/jhills20)
@@ -355,3 +556,7 @@ run_demo_loop(agent, stream=True)
 - Charu Jaiswal - [charuj](https://github.com/charuj)
 - Colin Jarvis - [colin-openai](https://github.com/colin-openai)
 - Katia Gil Guzman - [katia-openai](https://github.com/katia-openai)
+
+# SwarmCog Contributors
+
+- SwarmCog Development Team
