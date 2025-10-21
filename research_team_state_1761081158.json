@@ -1,0 +1,3181 @@
+{
+  "system": {
+    "running": false,
+    "uptime_seconds": 10.014241933822632,
+    "total_interactions": 0,
+    "config": {
+      "processing_mode": "asynchronous",
+      "cognitive_cycle_interval": 0.5,
+      "max_agents": 10,
+      "enable_distributed_processing": false,
+      "log_level": "INFO",
+      "agentspace_name": "research_lab"
+    }
+  },
+  "agentspace": {
+    "name": "research_lab",
+    "atoms": {
+      "38e30220-218e-4d2e-bea8-954f86602f3c": {
+        "id": "38e30220-218e-4d2e-bea8-954f86602f3c",
+        "type": "AgentNode",
+        "name": "Dr_Alice",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1788695,
+        "metadata": {}
+      },
+      "5f37a055-b5a8-40bc-b54b-0242043b5611": {
+        "id": "5f37a055-b5a8-40bc-b54b-0242043b5611",
+        "type": "AgentNode",
+        "name": "Dr_Bob",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.179138,
+        "metadata": {}
+      },
+      "029369c4-a5f5-4984-bf46-a562bdd1523f": {
+        "id": "029369c4-a5f5-4984-bf46-a562bdd1523f",
+        "type": "CapabilityNode",
+        "name": "data_analysis",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1791663,
+        "metadata": {
+          "name": "data_analysis",
+          "description": "Capability: data_analysis",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "10b2edb7-14eb-4579-bd46-ed73f57af7d0": {
+        "id": "10b2edb7-14eb-4579-bd46-ed73f57af7d0",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_10b2edb7",
+        "outgoing": [
+          "5f37a055-b5a8-40bc-b54b-0242043b5611",
+          "029369c4-a5f5-4984-bf46-a562bdd1523f"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1791792,
+        "metadata": {}
+      },
+      "da6f5daa-07a5-48d6-9e3c-a423ca595919": {
+        "id": "da6f5daa-07a5-48d6-9e3c-a423ca595919",
+        "type": "CapabilityNode",
+        "name": "machine_learning",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1791902,
+        "metadata": {
+          "name": "machine_learning",
+          "description": "Capability: machine_learning",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "f87f5fa8-75f9-4ea2-a468-122eee058563": {
+        "id": "f87f5fa8-75f9-4ea2-a468-122eee058563",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_f87f5fa8",
+        "outgoing": [
+          "5f37a055-b5a8-40bc-b54b-0242043b5611",
+          "da6f5daa-07a5-48d6-9e3c-a423ca595919"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1792014,
+        "metadata": {}
+      },
+      "ec0ba05d-be04-4ba0-8bad-fe342509e553": {
+        "id": "ec0ba05d-be04-4ba0-8bad-fe342509e553",
+        "type": "CapabilityNode",
+        "name": "statistics",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1792107,
+        "metadata": {
+          "name": "statistics",
+          "description": "Capability: statistics",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "e7845a8f-dd16-4c70-a8f1-8e09b1e1cb94": {
+        "id": "e7845a8f-dd16-4c70-a8f1-8e09b1e1cb94",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_e7845a8f",
+        "outgoing": [
+          "5f37a055-b5a8-40bc-b54b-0242043b5611",
+          "ec0ba05d-be04-4ba0-8bad-fe342509e553"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.179221,
+        "metadata": {}
+      },
+      "5f0f4133-c46b-4db6-9145-1f4c99231a10": {
+        "id": "5f0f4133-c46b-4db6-9145-1f4c99231a10",
+        "type": "GoalNode",
+        "name": "analyze_research_data",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.30000000000000004,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1792297,
+        "metadata": {}
+      },
+      "844b0d9d-16b9-479d-8205-ed7fec5fb466": {
+        "id": "844b0d9d-16b9-479d-8205-ed7fec5fb466",
+        "type": "GoalNode",
+        "name": "build_predictive_models",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.30000000000000004,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.179244,
+        "metadata": {}
+      },
+      "1e823a04-6171-4e76-af4f-0e690addf47b": {
+        "id": "1e823a04-6171-4e76-af4f-0e690addf47b",
+        "type": "GoalNode",
+        "name": "share_insights",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.30000000000000004,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.179254,
+        "metadata": {}
+      },
+      "e28f809d-662c-4ad1-ae08-0400b8588610": {
+        "id": "e28f809d-662c-4ad1-ae08-0400b8588610",
+        "type": "BeliefNode",
+        "name": "role",
+        "value": "data_scientist",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1792724,
+        "metadata": {}
+      },
+      "66f130c4-e871-40d3-bc05-1f5e7018f541": {
+        "id": "66f130c4-e871-40d3-bc05-1f5e7018f541",
+        "type": "BeliefNode",
+        "name": "specialty",
+        "value": "ML_and_statistics",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1792881,
+        "metadata": {}
+      },
+      "d010e6ab-65ac-4cdc-9331-3af1d1076803": {
+        "id": "d010e6ab-65ac-4cdc-9331-3af1d1076803",
+        "type": "BeliefNode",
+        "name": "collaboration_preference",
+        "value": "data_driven",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1792984,
+        "metadata": {}
+      },
+      "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881": {
+        "id": "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+        "type": "AgentNode",
+        "name": "Dr_Carol",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1793668,
+        "metadata": {}
+      },
+      "f93ca360-9b42-4d1a-92ca-58797c6304a2": {
+        "id": "f93ca360-9b42-4d1a-92ca-58797c6304a2",
+        "type": "CapabilityNode",
+        "name": "domain_expertise",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1793885,
+        "metadata": {
+          "name": "domain_expertise",
+          "description": "Capability: domain_expertise",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "b0c8f3fd-3caa-400b-8166-8bdcfab343ff": {
+        "id": "b0c8f3fd-3caa-400b-8166-8bdcfab343ff",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_b0c8f3fd",
+        "outgoing": [
+          "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+          "f93ca360-9b42-4d1a-92ca-58797c6304a2"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1794014,
+        "metadata": {}
+      },
+      "fc10094f-0372-4b85-84c9-83ba5e156962": {
+        "id": "fc10094f-0372-4b85-84c9-83ba5e156962",
+        "type": "CapabilityNode",
+        "name": "literature_review",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.179412,
+        "metadata": {
+          "name": "literature_review",
+          "description": "Capability: literature_review",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "a99aeab4-1514-4b1c-ae96-cbe8cff2b30f": {
+        "id": "a99aeab4-1514-4b1c-ae96-cbe8cff2b30f",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_a99aeab4",
+        "outgoing": [
+          "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+          "fc10094f-0372-4b85-84c9-83ba5e156962"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.179423,
+        "metadata": {}
+      },
+      "6d712fa7-420b-4405-bbc1-cd293aa952d9": {
+        "id": "6d712fa7-420b-4405-bbc1-cd293aa952d9",
+        "type": "CapabilityNode",
+        "name": "hypothesis_generation",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1794322,
+        "metadata": {
+          "name": "hypothesis_generation",
+          "description": "Capability: hypothesis_generation",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "f7ceca32-daab-403e-bd6c-a57a824f1ba3": {
+        "id": "f7ceca32-daab-403e-bd6c-a57a824f1ba3",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_f7ceca32",
+        "outgoing": [
+          "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+          "6d712fa7-420b-4405-bbc1-cd293aa952d9"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1794488,
+        "metadata": {}
+      },
+      "8c315f24-d1e4-4d3c-b1ff-bda3b6d9d2bd": {
+        "id": "8c315f24-d1e4-4d3c-b1ff-bda3b6d9d2bd",
+        "type": "GoalNode",
+        "name": "provide_domain_insights",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.30000000000000004,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1794581,
+        "metadata": {}
+      },
+      "839e2ab3-e119-4da0-89c5-d96752887047": {
+        "id": "839e2ab3-e119-4da0-89c5-d96752887047",
+        "type": "GoalNode",
+        "name": "validate_hypotheses",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.30000000000000004,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1794736,
+        "metadata": {}
+      },
+      "ebf9a310-8c66-48c2-a88b-844e03e5e855": {
+        "id": "ebf9a310-8c66-48c2-a88b-844e03e5e855",
+        "type": "GoalNode",
+        "name": "mentor_team",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.30000000000000004,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1794899,
+        "metadata": {}
+      },
+      "33be4d51-548c-4b5f-a340-4c05856004cc": {
+        "id": "33be4d51-548c-4b5f-a340-4c05856004cc",
+        "type": "BeliefNode",
+        "name": "role",
+        "value": "domain_expert",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1795037,
+        "metadata": {}
+      },
+      "949d1f71-8a99-456e-8217-4e826c4a3332": {
+        "id": "949d1f71-8a99-456e-8217-4e826c4a3332",
+        "type": "BeliefNode",
+        "name": "expertise_area",
+        "value": "cognitive_science",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1795146,
+        "metadata": {}
+      },
+      "06dfafd5-f515-4103-a641-65128841fd76": {
+        "id": "06dfafd5-f515-4103-a641-65128841fd76",
+        "type": "BeliefNode",
+        "name": "years_experience",
+        "value": 15,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1795232,
+        "metadata": {}
+      },
+      "c13afc85-ab42-4a5f-b86c-62cd16f91814": {
+        "id": "c13afc85-ab42-4a5f-b86c-62cd16f91814",
+        "type": "AgentNode",
+        "name": "Alex",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1795921,
+        "metadata": {}
+      },
+      "1283359e-eecf-4cd2-8f00-9e13695487e9": {
+        "id": "1283359e-eecf-4cd2-8f00-9e13695487e9",
+        "type": "CapabilityNode",
+        "name": "research_support",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1796217,
+        "metadata": {
+          "name": "research_support",
+          "description": "Capability: research_support",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "73f9bff4-fc39-4d93-808e-e74b51a4dbe2": {
+        "id": "73f9bff4-fc39-4d93-808e-e74b51a4dbe2",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_73f9bff4",
+        "outgoing": [
+          "c13afc85-ab42-4a5f-b86c-62cd16f91814",
+          "1283359e-eecf-4cd2-8f00-9e13695487e9"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.179638,
+        "metadata": {}
+      },
+      "6f722ec9-9a99-415a-ba0a-5ff69b36e8ad": {
+        "id": "6f722ec9-9a99-415a-ba0a-5ff69b36e8ad",
+        "type": "CapabilityNode",
+        "name": "data_collection",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1796691,
+        "metadata": {
+          "name": "data_collection",
+          "description": "Capability: data_collection",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "399d387f-5f91-412d-8317-196321275c06": {
+        "id": "399d387f-5f91-412d-8317-196321275c06",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_399d387f",
+        "outgoing": [
+          "c13afc85-ab42-4a5f-b86c-62cd16f91814",
+          "6f722ec9-9a99-415a-ba0a-5ff69b36e8ad"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1796908,
+        "metadata": {}
+      },
+      "7ed3a411-a2e7-4dfa-a339-1fd2072814f6": {
+        "id": "7ed3a411-a2e7-4dfa-a339-1fd2072814f6",
+        "type": "CapabilityNode",
+        "name": "learning",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1797025,
+        "metadata": {
+          "name": "learning",
+          "description": "Capability: learning",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "b43ee0af-7209-4ef1-bee9-3fe1a2c940f9": {
+        "id": "b43ee0af-7209-4ef1-bee9-3fe1a2c940f9",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_b43ee0af",
+        "outgoing": [
+          "c13afc85-ab42-4a5f-b86c-62cd16f91814",
+          "7ed3a411-a2e7-4dfa-a339-1fd2072814f6"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1797154,
+        "metadata": {}
+      },
+      "3e023ffb-db73-4f3a-93fa-9cb0404fd166": {
+        "id": "3e023ffb-db73-4f3a-93fa-9cb0404fd166",
+        "type": "GoalNode",
+        "name": "support_senior_researchers",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.30000000000000004,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1797242,
+        "metadata": {}
+      },
+      "0155dfd6-a628-486c-ab6b-570a4e6d47c7": {
+        "id": "0155dfd6-a628-486c-ab6b-570a4e6d47c7",
+        "type": "GoalNode",
+        "name": "learn_new_methods",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.30000000000000004,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.179735,
+        "metadata": {}
+      },
+      "b9fcc211-faf7-4d1c-b1ed-ca7816bd7326": {
+        "id": "b9fcc211-faf7-4d1c-b1ed-ca7816bd7326",
+        "type": "GoalNode",
+        "name": "contribute_meaningfully",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.30000000000000004,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1797483,
+        "metadata": {}
+      },
+      "a6172a99-31c6-4a0c-be61-8d543c3ee1b9": {
+        "id": "a6172a99-31c6-4a0c-be61-8d543c3ee1b9",
+        "type": "BeliefNode",
+        "name": "role",
+        "value": "research_assistant",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1797593,
+        "metadata": {}
+      },
+      "d02c3397-a485-43dd-919e-fe36a59f8c55": {
+        "id": "d02c3397-a485-43dd-919e-fe36a59f8c55",
+        "type": "BeliefNode",
+        "name": "learning_mode",
+        "value": "active",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1797686,
+        "metadata": {}
+      },
+      "7cf3f762-d637-4da0-b93a-6bd791d02874": {
+        "id": "7cf3f762-d637-4da0-b93a-6bd791d02874",
+        "type": "BeliefNode",
+        "name": "eagerness",
+        "value": 0.9,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1797774,
+        "metadata": {}
+      },
+      "165476f4-8022-477b-8c1e-d1dbdc33f582": {
+        "id": "165476f4-8022-477b-8c1e-d1dbdc33f582",
+        "type": "TrustLink",
+        "name": "TrustLink_165476f4",
+        "outgoing": [
+          "5f37a055-b5a8-40bc-b54b-0242043b5611",
+          "38e30220-218e-4d2e-bea8-954f86602f3c"
+        ],
+        "truth_value": {
+          "strength": 0.8,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1799188,
+        "metadata": {}
+      },
+      "67b08757-e4d6-464d-81c3-d1253881dfd4": {
+        "id": "67b08757-e4d6-464d-81c3-d1253881dfd4",
+        "type": "MemoryNode",
+        "name": "trust_establishment_1",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1799345,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Dr_Alice",
+            "trust_level": 0.8,
+            "timestamp": 1761081148.1799238,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081148.1799247
+        }
+      },
+      "aaf233f5-6c4e-439b-82c9-7fe0eee97e18": {
+        "id": "aaf233f5-6c4e-439b-82c9-7fe0eee97e18",
+        "type": "TrustLink",
+        "name": "TrustLink_aaf233f5",
+        "outgoing": [
+          "5f37a055-b5a8-40bc-b54b-0242043b5611",
+          "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881"
+        ],
+        "truth_value": {
+          "strength": 0.85,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.17998,
+        "metadata": {}
+      },
+      "4ae8d9af-4175-4136-8b70-356d55e7949f": {
+        "id": "4ae8d9af-4175-4136-8b70-356d55e7949f",
+        "type": "MemoryNode",
+        "name": "trust_establishment_2",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1799948,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Dr_Carol",
+            "trust_level": 0.85,
+            "timestamp": 1761081148.1799848,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081148.179986
+        }
+      },
+      "90035aa8-6eed-4088-8194-8f037a1e2a28": {
+        "id": "90035aa8-6eed-4088-8194-8f037a1e2a28",
+        "type": "TrustLink",
+        "name": "TrustLink_90035aa8",
+        "outgoing": [
+          "5f37a055-b5a8-40bc-b54b-0242043b5611",
+          "c13afc85-ab42-4a5f-b86c-62cd16f91814"
+        ],
+        "truth_value": {
+          "strength": 0.7,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1800354,
+        "metadata": {}
+      },
+      "65c95a13-5121-4aab-907f-b88e45561522": {
+        "id": "65c95a13-5121-4aab-907f-b88e45561522",
+        "type": "MemoryNode",
+        "name": "trust_establishment_3",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1800473,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Alex",
+            "trust_level": 0.7,
+            "timestamp": 1761081148.1800392,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081148.1800396
+        }
+      },
+      "642263cc-41ba-4d5b-aa30-4db9eb388721": {
+        "id": "642263cc-41ba-4d5b-aa30-4db9eb388721",
+        "type": "TrustLink",
+        "name": "TrustLink_642263cc",
+        "outgoing": [
+          "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+          "38e30220-218e-4d2e-bea8-954f86602f3c"
+        ],
+        "truth_value": {
+          "strength": 0.88,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1800811,
+        "metadata": {}
+      },
+      "fed38c16-a29a-4dd6-af2f-cb7a0e10c68e": {
+        "id": "fed38c16-a29a-4dd6-af2f-cb7a0e10c68e",
+        "type": "MemoryNode",
+        "name": "trust_establishment_1",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1800916,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Dr_Alice",
+            "trust_level": 0.88,
+            "timestamp": 1761081148.180084,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081148.1800845
+        }
+      },
+      "432d31fb-1875-4d6c-bf45-4127bcb1a18d": {
+        "id": "432d31fb-1875-4d6c-bf45-4127bcb1a18d",
+        "type": "TrustLink",
+        "name": "TrustLink_432d31fb",
+        "outgoing": [
+          "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+          "5f37a055-b5a8-40bc-b54b-0242043b5611"
+        ],
+        "truth_value": {
+          "strength": 0.82,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1801245,
+        "metadata": {}
+      },
+      "55525fef-8393-4618-995d-ec3033ab5c4d": {
+        "id": "55525fef-8393-4618-995d-ec3033ab5c4d",
+        "type": "MemoryNode",
+        "name": "trust_establishment_2",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1801353,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Dr_Bob",
+            "trust_level": 0.82,
+            "timestamp": 1761081148.1801274,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081148.1801283
+        }
+      },
+      "4705b047-ea6e-4c60-84d9-f41d276f1021": {
+        "id": "4705b047-ea6e-4c60-84d9-f41d276f1021",
+        "type": "TrustLink",
+        "name": "TrustLink_4705b047",
+        "outgoing": [
+          "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+          "c13afc85-ab42-4a5f-b86c-62cd16f91814"
+        ],
+        "truth_value": {
+          "strength": 0.75,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1801646,
+        "metadata": {}
+      },
+      "f0071f22-b16e-44e3-91de-b3e398527927": {
+        "id": "f0071f22-b16e-44e3-91de-b3e398527927",
+        "type": "MemoryNode",
+        "name": "trust_establishment_3",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1801744,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Alex",
+            "trust_level": 0.75,
+            "timestamp": 1761081148.1801672,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081148.1801677
+        }
+      },
+      "5e518be5-b765-4f25-8790-15aacb51fd36": {
+        "id": "5e518be5-b765-4f25-8790-15aacb51fd36",
+        "type": "GoalNode",
+        "name": "contribute_to_task: Develop AI-Human Collaboration Framework",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 1.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1802557,
+        "metadata": {}
+      },
+      "5fde95c8-443b-4d4c-9fd3-28f30250ba88": {
+        "id": "5fde95c8-443b-4d4c-9fd3-28f30250ba88",
+        "type": "GoalNode",
+        "name": "contribute_to_task: Develop AI-Human Collaboration Framework",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 1.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1802676,
+        "metadata": {}
+      },
+      "3e3ff13b-256f-42b0-a5c4-44b71298a688": {
+        "id": "3e3ff13b-256f-42b0-a5c4-44b71298a688",
+        "type": "GoalNode",
+        "name": "contribute_to_task: Develop AI-Human Collaboration Framework",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.180277,
+        "metadata": {}
+      },
+      "71c9ef09-39e0-421e-8f76-9fb9aa1a3bc7": {
+        "id": "71c9ef09-39e0-421e-8f76-9fb9aa1a3bc7",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_71c9ef09",
+        "outgoing": [
+          "38e30220-218e-4d2e-bea8-954f86602f3c",
+          "5f37a055-b5a8-40bc-b54b-0242043b5611"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1803095,
+        "metadata": {
+          "collaboration_type": "Develop AI-Human Collaboration Framework"
+        }
+      },
+      "f79d9dbc-9a19-4c50-8813-2c938fc7e5d7": {
+        "id": "f79d9dbc-9a19-4c50-8813-2c938fc7e5d7",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_f79d9dbc",
+        "outgoing": [
+          "38e30220-218e-4d2e-bea8-954f86602f3c",
+          "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1803205,
+        "metadata": {
+          "collaboration_type": "Develop AI-Human Collaboration Framework"
+        }
+      },
+      "5c0c85c9-4e5b-42c8-902d-139bce30dcca": {
+        "id": "5c0c85c9-4e5b-42c8-902d-139bce30dcca",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_5c0c85c9",
+        "outgoing": [
+          "38e30220-218e-4d2e-bea8-954f86602f3c",
+          "c13afc85-ab42-4a5f-b86c-62cd16f91814"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1803293,
+        "metadata": {
+          "collaboration_type": "Develop AI-Human Collaboration Framework"
+        }
+      },
+      "1f405b05-e711-4d71-8e51-3fb5f80ebea3": {
+        "id": "1f405b05-e711-4d71-8e51-3fb5f80ebea3",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_1f405b05",
+        "outgoing": [
+          "5f37a055-b5a8-40bc-b54b-0242043b5611",
+          "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.180338,
+        "metadata": {
+          "collaboration_type": "Develop AI-Human Collaboration Framework"
+        }
+      },
+      "238e92fd-1a9e-4951-901f-f31e47457a48": {
+        "id": "238e92fd-1a9e-4951-901f-f31e47457a48",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_238e92fd",
+        "outgoing": [
+          "5f37a055-b5a8-40bc-b54b-0242043b5611",
+          "c13afc85-ab42-4a5f-b86c-62cd16f91814"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1804063,
+        "metadata": {
+          "collaboration_type": "Develop AI-Human Collaboration Framework"
+        }
+      },
+      "6367be3f-9481-4563-ba51-1f6d9519576d": {
+        "id": "6367be3f-9481-4563-ba51-1f6d9519576d",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_6367be3f",
+        "outgoing": [
+          "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+          "c13afc85-ab42-4a5f-b86c-62cd16f91814"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1804168,
+        "metadata": {
+          "collaboration_type": "Develop AI-Human Collaboration Framework"
+        }
+      },
+      "ff08aefb-e169-4afb-829b-7ffc021359bc": {
+        "id": "ff08aefb-e169-4afb-829b-7ffc021359bc",
+        "type": "KnowledgeLink",
+        "name": "cognitive_frameworks_1761081148",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.180512,
+        "metadata": {
+          "type": "cognitive_frameworks",
+          "content": {
+            "theory": "dual_process_theory",
+            "applications": [
+              "decision_making",
+              "problem_solving"
+            ],
+            "references": [
+              "Kahneman_2011",
+              "Evans_2008"
+            ]
+          },
+          "source": "Dr_Carol",
+          "timestamp": 1761081148.1804955
+        }
+      },
+      "29903c88-689c-47cf-90ac-260b53194bb3": {
+        "id": "29903c88-689c-47cf-90ac-260b53194bb3",
+        "type": "MemoryNode",
+        "name": "knowledge_sharing_4",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1805258,
+        "metadata": {
+          "type": "knowledge_sharing",
+          "content": {
+            "action": "share_knowledge",
+            "knowledge_type": "cognitive_frameworks",
+            "target": "all_agents",
+            "shared_at": 1761081148.180516,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081148.180517
+        }
+      },
+      "b380368f-0e13-482a-bd14-522e6a2a7ee2": {
+        "id": "b380368f-0e13-482a-bd14-522e6a2a7ee2",
+        "type": "KnowledgeLink",
+        "name": "analysis_methods_1761081148",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1805553,
+        "metadata": {
+          "type": "analysis_methods",
+          "content": {
+            "techniques": [
+              "neural_networks",
+              "bayesian_inference",
+              "clustering"
+            ],
+            "tools": [
+              "tensorflow",
+              "pytorch",
+              "scikit_learn"
+            ],
+            "best_practices": [
+              "cross_validation",
+              "regularization"
+            ]
+          },
+          "source": "Dr_Bob",
+          "timestamp": 1761081148.1805468
+        }
+      },
+      "d59e76b8-8d4f-4b99-acac-49c82bd70d09": {
+        "id": "d59e76b8-8d4f-4b99-acac-49c82bd70d09",
+        "type": "MemoryNode",
+        "name": "knowledge_sharing_4",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081148.1805663,
+        "metadata": {
+          "type": "knowledge_sharing",
+          "content": {
+            "action": "share_knowledge",
+            "knowledge_type": "analysis_methods",
+            "target": "all_agents",
+            "shared_at": 1761081148.180558,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081148.180559
+        }
+      }
+    },
+    "statistics": {
+      "total_atoms": 65,
+      "atom_types": {
+        "AgentNode": 4,
+        "CapabilityNode": 9,
+        "KnowledgeLink": 11,
+        "GoalNode": 12,
+        "BeliefNode": 9,
+        "TrustLink": 6,
+        "MemoryNode": 8,
+        "CollaborationLink": 6
+      },
+      "timestamp": 1761081158.1950204
+    }
+  },
+  "cognitive_system": {
+    "microkernel": {
+      "running": false,
+      "processing_mode": "asynchronous",
+      "active_agents": 4,
+      "running_cycles": 0
+    },
+    "agentspace": {
+      "name": "research_lab",
+      "atoms": {
+        "38e30220-218e-4d2e-bea8-954f86602f3c": {
+          "id": "38e30220-218e-4d2e-bea8-954f86602f3c",
+          "type": "AgentNode",
+          "name": "Dr_Alice",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1788695,
+          "metadata": {}
+        },
+        "5f37a055-b5a8-40bc-b54b-0242043b5611": {
+          "id": "5f37a055-b5a8-40bc-b54b-0242043b5611",
+          "type": "AgentNode",
+          "name": "Dr_Bob",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.179138,
+          "metadata": {}
+        },
+        "029369c4-a5f5-4984-bf46-a562bdd1523f": {
+          "id": "029369c4-a5f5-4984-bf46-a562bdd1523f",
+          "type": "CapabilityNode",
+          "name": "data_analysis",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1791663,
+          "metadata": {
+            "name": "data_analysis",
+            "description": "Capability: data_analysis",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "10b2edb7-14eb-4579-bd46-ed73f57af7d0": {
+          "id": "10b2edb7-14eb-4579-bd46-ed73f57af7d0",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_10b2edb7",
+          "outgoing": [
+            "5f37a055-b5a8-40bc-b54b-0242043b5611",
+            "029369c4-a5f5-4984-bf46-a562bdd1523f"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1791792,
+          "metadata": {}
+        },
+        "da6f5daa-07a5-48d6-9e3c-a423ca595919": {
+          "id": "da6f5daa-07a5-48d6-9e3c-a423ca595919",
+          "type": "CapabilityNode",
+          "name": "machine_learning",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1791902,
+          "metadata": {
+            "name": "machine_learning",
+            "description": "Capability: machine_learning",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "f87f5fa8-75f9-4ea2-a468-122eee058563": {
+          "id": "f87f5fa8-75f9-4ea2-a468-122eee058563",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_f87f5fa8",
+          "outgoing": [
+            "5f37a055-b5a8-40bc-b54b-0242043b5611",
+            "da6f5daa-07a5-48d6-9e3c-a423ca595919"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1792014,
+          "metadata": {}
+        },
+        "ec0ba05d-be04-4ba0-8bad-fe342509e553": {
+          "id": "ec0ba05d-be04-4ba0-8bad-fe342509e553",
+          "type": "CapabilityNode",
+          "name": "statistics",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1792107,
+          "metadata": {
+            "name": "statistics",
+            "description": "Capability: statistics",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "e7845a8f-dd16-4c70-a8f1-8e09b1e1cb94": {
+          "id": "e7845a8f-dd16-4c70-a8f1-8e09b1e1cb94",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_e7845a8f",
+          "outgoing": [
+            "5f37a055-b5a8-40bc-b54b-0242043b5611",
+            "ec0ba05d-be04-4ba0-8bad-fe342509e553"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.179221,
+          "metadata": {}
+        },
+        "5f0f4133-c46b-4db6-9145-1f4c99231a10": {
+          "id": "5f0f4133-c46b-4db6-9145-1f4c99231a10",
+          "type": "GoalNode",
+          "name": "analyze_research_data",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.30000000000000004,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1792297,
+          "metadata": {}
+        },
+        "844b0d9d-16b9-479d-8205-ed7fec5fb466": {
+          "id": "844b0d9d-16b9-479d-8205-ed7fec5fb466",
+          "type": "GoalNode",
+          "name": "build_predictive_models",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.30000000000000004,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.179244,
+          "metadata": {}
+        },
+        "1e823a04-6171-4e76-af4f-0e690addf47b": {
+          "id": "1e823a04-6171-4e76-af4f-0e690addf47b",
+          "type": "GoalNode",
+          "name": "share_insights",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.30000000000000004,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.179254,
+          "metadata": {}
+        },
+        "e28f809d-662c-4ad1-ae08-0400b8588610": {
+          "id": "e28f809d-662c-4ad1-ae08-0400b8588610",
+          "type": "BeliefNode",
+          "name": "role",
+          "value": "data_scientist",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1792724,
+          "metadata": {}
+        },
+        "66f130c4-e871-40d3-bc05-1f5e7018f541": {
+          "id": "66f130c4-e871-40d3-bc05-1f5e7018f541",
+          "type": "BeliefNode",
+          "name": "specialty",
+          "value": "ML_and_statistics",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1792881,
+          "metadata": {}
+        },
+        "d010e6ab-65ac-4cdc-9331-3af1d1076803": {
+          "id": "d010e6ab-65ac-4cdc-9331-3af1d1076803",
+          "type": "BeliefNode",
+          "name": "collaboration_preference",
+          "value": "data_driven",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1792984,
+          "metadata": {}
+        },
+        "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881": {
+          "id": "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+          "type": "AgentNode",
+          "name": "Dr_Carol",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1793668,
+          "metadata": {}
+        },
+        "f93ca360-9b42-4d1a-92ca-58797c6304a2": {
+          "id": "f93ca360-9b42-4d1a-92ca-58797c6304a2",
+          "type": "CapabilityNode",
+          "name": "domain_expertise",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1793885,
+          "metadata": {
+            "name": "domain_expertise",
+            "description": "Capability: domain_expertise",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "b0c8f3fd-3caa-400b-8166-8bdcfab343ff": {
+          "id": "b0c8f3fd-3caa-400b-8166-8bdcfab343ff",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_b0c8f3fd",
+          "outgoing": [
+            "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+            "f93ca360-9b42-4d1a-92ca-58797c6304a2"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1794014,
+          "metadata": {}
+        },
+        "fc10094f-0372-4b85-84c9-83ba5e156962": {
+          "id": "fc10094f-0372-4b85-84c9-83ba5e156962",
+          "type": "CapabilityNode",
+          "name": "literature_review",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.179412,
+          "metadata": {
+            "name": "literature_review",
+            "description": "Capability: literature_review",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "a99aeab4-1514-4b1c-ae96-cbe8cff2b30f": {
+          "id": "a99aeab4-1514-4b1c-ae96-cbe8cff2b30f",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_a99aeab4",
+          "outgoing": [
+            "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+            "fc10094f-0372-4b85-84c9-83ba5e156962"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.179423,
+          "metadata": {}
+        },
+        "6d712fa7-420b-4405-bbc1-cd293aa952d9": {
+          "id": "6d712fa7-420b-4405-bbc1-cd293aa952d9",
+          "type": "CapabilityNode",
+          "name": "hypothesis_generation",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1794322,
+          "metadata": {
+            "name": "hypothesis_generation",
+            "description": "Capability: hypothesis_generation",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "f7ceca32-daab-403e-bd6c-a57a824f1ba3": {
+          "id": "f7ceca32-daab-403e-bd6c-a57a824f1ba3",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_f7ceca32",
+          "outgoing": [
+            "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+            "6d712fa7-420b-4405-bbc1-cd293aa952d9"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1794488,
+          "metadata": {}
+        },
+        "8c315f24-d1e4-4d3c-b1ff-bda3b6d9d2bd": {
+          "id": "8c315f24-d1e4-4d3c-b1ff-bda3b6d9d2bd",
+          "type": "GoalNode",
+          "name": "provide_domain_insights",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.30000000000000004,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1794581,
+          "metadata": {}
+        },
+        "839e2ab3-e119-4da0-89c5-d96752887047": {
+          "id": "839e2ab3-e119-4da0-89c5-d96752887047",
+          "type": "GoalNode",
+          "name": "validate_hypotheses",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.30000000000000004,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1794736,
+          "metadata": {}
+        },
+        "ebf9a310-8c66-48c2-a88b-844e03e5e855": {
+          "id": "ebf9a310-8c66-48c2-a88b-844e03e5e855",
+          "type": "GoalNode",
+          "name": "mentor_team",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.30000000000000004,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1794899,
+          "metadata": {}
+        },
+        "33be4d51-548c-4b5f-a340-4c05856004cc": {
+          "id": "33be4d51-548c-4b5f-a340-4c05856004cc",
+          "type": "BeliefNode",
+          "name": "role",
+          "value": "domain_expert",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1795037,
+          "metadata": {}
+        },
+        "949d1f71-8a99-456e-8217-4e826c4a3332": {
+          "id": "949d1f71-8a99-456e-8217-4e826c4a3332",
+          "type": "BeliefNode",
+          "name": "expertise_area",
+          "value": "cognitive_science",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1795146,
+          "metadata": {}
+        },
+        "06dfafd5-f515-4103-a641-65128841fd76": {
+          "id": "06dfafd5-f515-4103-a641-65128841fd76",
+          "type": "BeliefNode",
+          "name": "years_experience",
+          "value": 15,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1795232,
+          "metadata": {}
+        },
+        "c13afc85-ab42-4a5f-b86c-62cd16f91814": {
+          "id": "c13afc85-ab42-4a5f-b86c-62cd16f91814",
+          "type": "AgentNode",
+          "name": "Alex",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1795921,
+          "metadata": {}
+        },
+        "1283359e-eecf-4cd2-8f00-9e13695487e9": {
+          "id": "1283359e-eecf-4cd2-8f00-9e13695487e9",
+          "type": "CapabilityNode",
+          "name": "research_support",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1796217,
+          "metadata": {
+            "name": "research_support",
+            "description": "Capability: research_support",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "73f9bff4-fc39-4d93-808e-e74b51a4dbe2": {
+          "id": "73f9bff4-fc39-4d93-808e-e74b51a4dbe2",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_73f9bff4",
+          "outgoing": [
+            "c13afc85-ab42-4a5f-b86c-62cd16f91814",
+            "1283359e-eecf-4cd2-8f00-9e13695487e9"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.179638,
+          "metadata": {}
+        },
+        "6f722ec9-9a99-415a-ba0a-5ff69b36e8ad": {
+          "id": "6f722ec9-9a99-415a-ba0a-5ff69b36e8ad",
+          "type": "CapabilityNode",
+          "name": "data_collection",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1796691,
+          "metadata": {
+            "name": "data_collection",
+            "description": "Capability: data_collection",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "399d387f-5f91-412d-8317-196321275c06": {
+          "id": "399d387f-5f91-412d-8317-196321275c06",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_399d387f",
+          "outgoing": [
+            "c13afc85-ab42-4a5f-b86c-62cd16f91814",
+            "6f722ec9-9a99-415a-ba0a-5ff69b36e8ad"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1796908,
+          "metadata": {}
+        },
+        "7ed3a411-a2e7-4dfa-a339-1fd2072814f6": {
+          "id": "7ed3a411-a2e7-4dfa-a339-1fd2072814f6",
+          "type": "CapabilityNode",
+          "name": "learning",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1797025,
+          "metadata": {
+            "name": "learning",
+            "description": "Capability: learning",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "b43ee0af-7209-4ef1-bee9-3fe1a2c940f9": {
+          "id": "b43ee0af-7209-4ef1-bee9-3fe1a2c940f9",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_b43ee0af",
+          "outgoing": [
+            "c13afc85-ab42-4a5f-b86c-62cd16f91814",
+            "7ed3a411-a2e7-4dfa-a339-1fd2072814f6"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1797154,
+          "metadata": {}
+        },
+        "3e023ffb-db73-4f3a-93fa-9cb0404fd166": {
+          "id": "3e023ffb-db73-4f3a-93fa-9cb0404fd166",
+          "type": "GoalNode",
+          "name": "support_senior_researchers",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.30000000000000004,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1797242,
+          "metadata": {}
+        },
+        "0155dfd6-a628-486c-ab6b-570a4e6d47c7": {
+          "id": "0155dfd6-a628-486c-ab6b-570a4e6d47c7",
+          "type": "GoalNode",
+          "name": "learn_new_methods",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.30000000000000004,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.179735,
+          "metadata": {}
+        },
+        "b9fcc211-faf7-4d1c-b1ed-ca7816bd7326": {
+          "id": "b9fcc211-faf7-4d1c-b1ed-ca7816bd7326",
+          "type": "GoalNode",
+          "name": "contribute_meaningfully",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.30000000000000004,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1797483,
+          "metadata": {}
+        },
+        "a6172a99-31c6-4a0c-be61-8d543c3ee1b9": {
+          "id": "a6172a99-31c6-4a0c-be61-8d543c3ee1b9",
+          "type": "BeliefNode",
+          "name": "role",
+          "value": "research_assistant",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1797593,
+          "metadata": {}
+        },
+        "d02c3397-a485-43dd-919e-fe36a59f8c55": {
+          "id": "d02c3397-a485-43dd-919e-fe36a59f8c55",
+          "type": "BeliefNode",
+          "name": "learning_mode",
+          "value": "active",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1797686,
+          "metadata": {}
+        },
+        "7cf3f762-d637-4da0-b93a-6bd791d02874": {
+          "id": "7cf3f762-d637-4da0-b93a-6bd791d02874",
+          "type": "BeliefNode",
+          "name": "eagerness",
+          "value": 0.9,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1797774,
+          "metadata": {}
+        },
+        "165476f4-8022-477b-8c1e-d1dbdc33f582": {
+          "id": "165476f4-8022-477b-8c1e-d1dbdc33f582",
+          "type": "TrustLink",
+          "name": "TrustLink_165476f4",
+          "outgoing": [
+            "5f37a055-b5a8-40bc-b54b-0242043b5611",
+            "38e30220-218e-4d2e-bea8-954f86602f3c"
+          ],
+          "truth_value": {
+            "strength": 0.8,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1799188,
+          "metadata": {}
+        },
+        "67b08757-e4d6-464d-81c3-d1253881dfd4": {
+          "id": "67b08757-e4d6-464d-81c3-d1253881dfd4",
+          "type": "MemoryNode",
+          "name": "trust_establishment_1",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1799345,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Dr_Alice",
+              "trust_level": 0.8,
+              "timestamp": 1761081148.1799238,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081148.1799247
+          }
+        },
+        "aaf233f5-6c4e-439b-82c9-7fe0eee97e18": {
+          "id": "aaf233f5-6c4e-439b-82c9-7fe0eee97e18",
+          "type": "TrustLink",
+          "name": "TrustLink_aaf233f5",
+          "outgoing": [
+            "5f37a055-b5a8-40bc-b54b-0242043b5611",
+            "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881"
+          ],
+          "truth_value": {
+            "strength": 0.85,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.17998,
+          "metadata": {}
+        },
+        "4ae8d9af-4175-4136-8b70-356d55e7949f": {
+          "id": "4ae8d9af-4175-4136-8b70-356d55e7949f",
+          "type": "MemoryNode",
+          "name": "trust_establishment_2",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1799948,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Dr_Carol",
+              "trust_level": 0.85,
+              "timestamp": 1761081148.1799848,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081148.179986
+          }
+        },
+        "90035aa8-6eed-4088-8194-8f037a1e2a28": {
+          "id": "90035aa8-6eed-4088-8194-8f037a1e2a28",
+          "type": "TrustLink",
+          "name": "TrustLink_90035aa8",
+          "outgoing": [
+            "5f37a055-b5a8-40bc-b54b-0242043b5611",
+            "c13afc85-ab42-4a5f-b86c-62cd16f91814"
+          ],
+          "truth_value": {
+            "strength": 0.7,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1800354,
+          "metadata": {}
+        },
+        "65c95a13-5121-4aab-907f-b88e45561522": {
+          "id": "65c95a13-5121-4aab-907f-b88e45561522",
+          "type": "MemoryNode",
+          "name": "trust_establishment_3",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1800473,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Alex",
+              "trust_level": 0.7,
+              "timestamp": 1761081148.1800392,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081148.1800396
+          }
+        },
+        "642263cc-41ba-4d5b-aa30-4db9eb388721": {
+          "id": "642263cc-41ba-4d5b-aa30-4db9eb388721",
+          "type": "TrustLink",
+          "name": "TrustLink_642263cc",
+          "outgoing": [
+            "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+            "38e30220-218e-4d2e-bea8-954f86602f3c"
+          ],
+          "truth_value": {
+            "strength": 0.88,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1800811,
+          "metadata": {}
+        },
+        "fed38c16-a29a-4dd6-af2f-cb7a0e10c68e": {
+          "id": "fed38c16-a29a-4dd6-af2f-cb7a0e10c68e",
+          "type": "MemoryNode",
+          "name": "trust_establishment_1",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1800916,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Dr_Alice",
+              "trust_level": 0.88,
+              "timestamp": 1761081148.180084,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081148.1800845
+          }
+        },
+        "432d31fb-1875-4d6c-bf45-4127bcb1a18d": {
+          "id": "432d31fb-1875-4d6c-bf45-4127bcb1a18d",
+          "type": "TrustLink",
+          "name": "TrustLink_432d31fb",
+          "outgoing": [
+            "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+            "5f37a055-b5a8-40bc-b54b-0242043b5611"
+          ],
+          "truth_value": {
+            "strength": 0.82,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1801245,
+          "metadata": {}
+        },
+        "55525fef-8393-4618-995d-ec3033ab5c4d": {
+          "id": "55525fef-8393-4618-995d-ec3033ab5c4d",
+          "type": "MemoryNode",
+          "name": "trust_establishment_2",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1801353,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Dr_Bob",
+              "trust_level": 0.82,
+              "timestamp": 1761081148.1801274,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081148.1801283
+          }
+        },
+        "4705b047-ea6e-4c60-84d9-f41d276f1021": {
+          "id": "4705b047-ea6e-4c60-84d9-f41d276f1021",
+          "type": "TrustLink",
+          "name": "TrustLink_4705b047",
+          "outgoing": [
+            "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+            "c13afc85-ab42-4a5f-b86c-62cd16f91814"
+          ],
+          "truth_value": {
+            "strength": 0.75,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1801646,
+          "metadata": {}
+        },
+        "f0071f22-b16e-44e3-91de-b3e398527927": {
+          "id": "f0071f22-b16e-44e3-91de-b3e398527927",
+          "type": "MemoryNode",
+          "name": "trust_establishment_3",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1801744,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Alex",
+              "trust_level": 0.75,
+              "timestamp": 1761081148.1801672,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081148.1801677
+          }
+        },
+        "5e518be5-b765-4f25-8790-15aacb51fd36": {
+          "id": "5e518be5-b765-4f25-8790-15aacb51fd36",
+          "type": "GoalNode",
+          "name": "contribute_to_task: Develop AI-Human Collaboration Framework",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 1.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1802557,
+          "metadata": {}
+        },
+        "5fde95c8-443b-4d4c-9fd3-28f30250ba88": {
+          "id": "5fde95c8-443b-4d4c-9fd3-28f30250ba88",
+          "type": "GoalNode",
+          "name": "contribute_to_task: Develop AI-Human Collaboration Framework",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 1.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1802676,
+          "metadata": {}
+        },
+        "3e3ff13b-256f-42b0-a5c4-44b71298a688": {
+          "id": "3e3ff13b-256f-42b0-a5c4-44b71298a688",
+          "type": "GoalNode",
+          "name": "contribute_to_task: Develop AI-Human Collaboration Framework",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.180277,
+          "metadata": {}
+        },
+        "71c9ef09-39e0-421e-8f76-9fb9aa1a3bc7": {
+          "id": "71c9ef09-39e0-421e-8f76-9fb9aa1a3bc7",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_71c9ef09",
+          "outgoing": [
+            "38e30220-218e-4d2e-bea8-954f86602f3c",
+            "5f37a055-b5a8-40bc-b54b-0242043b5611"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1803095,
+          "metadata": {
+            "collaboration_type": "Develop AI-Human Collaboration Framework"
+          }
+        },
+        "f79d9dbc-9a19-4c50-8813-2c938fc7e5d7": {
+          "id": "f79d9dbc-9a19-4c50-8813-2c938fc7e5d7",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_f79d9dbc",
+          "outgoing": [
+            "38e30220-218e-4d2e-bea8-954f86602f3c",
+            "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1803205,
+          "metadata": {
+            "collaboration_type": "Develop AI-Human Collaboration Framework"
+          }
+        },
+        "5c0c85c9-4e5b-42c8-902d-139bce30dcca": {
+          "id": "5c0c85c9-4e5b-42c8-902d-139bce30dcca",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_5c0c85c9",
+          "outgoing": [
+            "38e30220-218e-4d2e-bea8-954f86602f3c",
+            "c13afc85-ab42-4a5f-b86c-62cd16f91814"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1803293,
+          "metadata": {
+            "collaboration_type": "Develop AI-Human Collaboration Framework"
+          }
+        },
+        "1f405b05-e711-4d71-8e51-3fb5f80ebea3": {
+          "id": "1f405b05-e711-4d71-8e51-3fb5f80ebea3",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_1f405b05",
+          "outgoing": [
+            "5f37a055-b5a8-40bc-b54b-0242043b5611",
+            "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.180338,
+          "metadata": {
+            "collaboration_type": "Develop AI-Human Collaboration Framework"
+          }
+        },
+        "238e92fd-1a9e-4951-901f-f31e47457a48": {
+          "id": "238e92fd-1a9e-4951-901f-f31e47457a48",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_238e92fd",
+          "outgoing": [
+            "5f37a055-b5a8-40bc-b54b-0242043b5611",
+            "c13afc85-ab42-4a5f-b86c-62cd16f91814"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1804063,
+          "metadata": {
+            "collaboration_type": "Develop AI-Human Collaboration Framework"
+          }
+        },
+        "6367be3f-9481-4563-ba51-1f6d9519576d": {
+          "id": "6367be3f-9481-4563-ba51-1f6d9519576d",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_6367be3f",
+          "outgoing": [
+            "dd2a6a73-d7d3-4d42-a2f8-16f2fe2ed881",
+            "c13afc85-ab42-4a5f-b86c-62cd16f91814"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1804168,
+          "metadata": {
+            "collaboration_type": "Develop AI-Human Collaboration Framework"
+          }
+        },
+        "ff08aefb-e169-4afb-829b-7ffc021359bc": {
+          "id": "ff08aefb-e169-4afb-829b-7ffc021359bc",
+          "type": "KnowledgeLink",
+          "name": "cognitive_frameworks_1761081148",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.180512,
+          "metadata": {
+            "type": "cognitive_frameworks",
+            "content": {
+              "theory": "dual_process_theory",
+              "applications": [
+                "decision_making",
+                "problem_solving"
+              ],
+              "references": [
+                "Kahneman_2011",
+                "Evans_2008"
+              ]
+            },
+            "source": "Dr_Carol",
+            "timestamp": 1761081148.1804955
+          }
+        },
+        "29903c88-689c-47cf-90ac-260b53194bb3": {
+          "id": "29903c88-689c-47cf-90ac-260b53194bb3",
+          "type": "MemoryNode",
+          "name": "knowledge_sharing_4",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1805258,
+          "metadata": {
+            "type": "knowledge_sharing",
+            "content": {
+              "action": "share_knowledge",
+              "knowledge_type": "cognitive_frameworks",
+              "target": "all_agents",
+              "shared_at": 1761081148.180516,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081148.180517
+          }
+        },
+        "b380368f-0e13-482a-bd14-522e6a2a7ee2": {
+          "id": "b380368f-0e13-482a-bd14-522e6a2a7ee2",
+          "type": "KnowledgeLink",
+          "name": "analysis_methods_1761081148",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1805553,
+          "metadata": {
+            "type": "analysis_methods",
+            "content": {
+              "techniques": [
+                "neural_networks",
+                "bayesian_inference",
+                "clustering"
+              ],
+              "tools": [
+                "tensorflow",
+                "pytorch",
+                "scikit_learn"
+              ],
+              "best_practices": [
+                "cross_validation",
+                "regularization"
+              ]
+            },
+            "source": "Dr_Bob",
+            "timestamp": 1761081148.1805468
+          }
+        },
+        "d59e76b8-8d4f-4b99-acac-49c82bd70d09": {
+          "id": "d59e76b8-8d4f-4b99-acac-49c82bd70d09",
+          "type": "MemoryNode",
+          "name": "knowledge_sharing_4",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081148.1805663,
+          "metadata": {
+            "type": "knowledge_sharing",
+            "content": {
+              "action": "share_knowledge",
+              "knowledge_type": "analysis_methods",
+              "target": "all_agents",
+              "shared_at": 1761081148.180558,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081148.180559
+          }
+        }
+      },
+      "statistics": {
+        "total_atoms": 65,
+        "atom_types": {
+          "AgentNode": 4,
+          "CapabilityNode": 9,
+          "KnowledgeLink": 11,
+          "GoalNode": 12,
+          "BeliefNode": 9,
+          "TrustLink": 6,
+          "MemoryNode": 8,
+          "CollaborationLink": 6
+        },
+        "timestamp": 1761081158.1950796
+      }
+    },
+    "agent_states": {
+      "Dr_Alice": {
+        "agent_id": "Dr_Alice",
+        "current_phase": "reflection",
+        "goals": [
+          "coordinate_research_project",
+          "ensure_team_collaboration",
+          "deliver_results",
+          "contribute_to_task: Develop AI-Human Collaboration Framework"
+        ],
+        "beliefs": {
+          "role": "lead_researcher",
+          "responsibility": "project_coordination",
+          "team_trust": 0.8,
+          "visible_agents": [
+            "Alex",
+            "Dr_Bob",
+            "Dr_Carol"
+          ],
+          "recent_changes": 65,
+          "potential_collaborators": [
+            "Dr_Bob",
+            "Dr_Carol",
+            "Alex"
+          ],
+          "trust_levels": {}
+        },
+        "intentions": [
+          "execute_contribute_to_task: Develop AI-Human Collaboration Framework"
+        ],
+        "working_memory": {
+          "last_perception": 1761081155.1905992,
+          "last_reasoning": 1761081156.1923897,
+          "last_planning": 1761081156.693149,
+          "executed_execute_coordinate_research_project": 1761081157.194034,
+          "executed_execute_ensure_team_collaboration": 1761081157.1940353,
+          "executed_execute_deliver_results": 1761081157.1940315,
+          "last_execution": 1761081157.1940377,
+          "last_learning": 1761081157.694772,
+          "last_reflection": 1761081154.6904118,
+          "executed_execute_contribute_to_task: Develop AI-Human Collaboration Framework": 1761081153.68892
+        },
+        "attention_focus": [
+          "5e518be5-b765-4f25-8790-15aacb51fd36",
+          "5fde95c8-443b-4d4c-9fd3-28f30250ba88",
+          "67b08757-e4d6-464d-81c3-d1253881dfd4",
+          "4ae8d9af-4175-4136-8b70-356d55e7949f",
+          "65c95a13-5121-4aab-907f-b88e45561522"
+        ],
+        "activation_level": 1.0,
+        "timestamp": 1761081148.1788504
+      },
+      "Dr_Bob": {
+        "agent_id": "Dr_Bob",
+        "current_phase": "reflection",
+        "goals": [
+          "analyze_research_data",
+          "build_predictive_models",
+          "share_insights",
+          "contribute_to_task: Develop AI-Human Collaboration Framework"
+        ],
+        "beliefs": {
+          "role": "data_scientist",
+          "specialty": "ML_and_statistics",
+          "collaboration_preference": "data_driven",
+          "visible_agents": [
+            "Dr_Alice",
+            "Alex",
+            "Dr_Carol"
+          ],
+          "recent_changes": 65,
+          "potential_collaborators": [
+            "Dr_Carol",
+            "Dr_Alice",
+            "Alex"
+          ],
+          "trust_levels": {
+            "Dr_Carol": 0.85,
+            "Dr_Alice": 0.8,
+            "Alex": 0.7
+          }
+        },
+        "intentions": [
+          "execute_contribute_to_task: Develop AI-Human Collaboration Framework"
+        ],
+        "working_memory": {
+          "last_perception": 1761081155.190634,
+          "last_reasoning": 1761081156.1924355,
+          "last_planning": 1761081156.6931834,
+          "executed_execute_analyze_research_data": 1761081157.1940637,
+          "executed_execute_build_predictive_models": 1761081157.1940641,
+          "executed_execute_share_insights": 1761081157.1940627,
+          "last_execution": 1761081157.1940656,
+          "last_learning": 1761081157.694808,
+          "last_reflection": 1761081154.6904538,
+          "executed_execute_contribute_to_task: Develop AI-Human Collaboration Framework": 1761081153.6889465
+        },
+        "attention_focus": [
+          "5e518be5-b765-4f25-8790-15aacb51fd36",
+          "5fde95c8-443b-4d4c-9fd3-28f30250ba88",
+          "67b08757-e4d6-464d-81c3-d1253881dfd4",
+          "4ae8d9af-4175-4136-8b70-356d55e7949f",
+          "65c95a13-5121-4aab-907f-b88e45561522",
+          "5f0f4133-c46b-4db6-9145-1f4c99231a10",
+          "844b0d9d-16b9-479d-8205-ed7fec5fb466",
+          "1e823a04-6171-4e76-af4f-0e690addf47b"
+        ],
+        "activation_level": 1.0,
+        "timestamp": 1761081148.1791441
+      },
+      "Dr_Carol": {
+        "agent_id": "Dr_Carol",
+        "current_phase": "reflection",
+        "goals": [
+          "provide_domain_insights",
+          "validate_hypotheses",
+          "mentor_team",
+          "contribute_to_task: Develop AI-Human Collaboration Framework"
+        ],
+        "beliefs": {
+          "role": "domain_expert",
+          "expertise_area": "cognitive_science",
+          "years_experience": 15,
+          "visible_agents": [
+            "Dr_Alice",
+            "Alex",
+            "Dr_Bob"
+          ],
+          "recent_changes": 65,
+          "potential_collaborators": [
+            "Dr_Bob",
+            "Dr_Alice",
+            "Alex"
+          ],
+          "trust_levels": {
+            "Dr_Bob": 0.82,
+            "Dr_Alice": 0.88,
+            "Alex": 0.75
+          }
+        },
+        "intentions": [
+          "execute_contribute_to_task: Develop AI-Human Collaboration Framework"
+        ],
+        "working_memory": {
+          "last_perception": 1761081155.1907032,
+          "last_reasoning": 1761081156.1924698,
+          "last_planning": 1761081156.6931996,
+          "executed_execute_provide_domain_insights": 1761081157.1940784,
+          "executed_execute_validate_hypotheses": 1761081157.194079,
+          "executed_execute_mentor_team": 1761081157.1940777,
+          "last_execution": 1761081157.19408,
+          "last_learning": 1761081157.6948225,
+          "last_reflection": 1761081154.6904755,
+          "executed_execute_contribute_to_task: Develop AI-Human Collaboration Framework": 1761081153.688961
+        },
+        "attention_focus": [
+          "5e518be5-b765-4f25-8790-15aacb51fd36",
+          "5fde95c8-443b-4d4c-9fd3-28f30250ba88",
+          "67b08757-e4d6-464d-81c3-d1253881dfd4",
+          "4ae8d9af-4175-4136-8b70-356d55e7949f",
+          "65c95a13-5121-4aab-907f-b88e45561522",
+          "8c315f24-d1e4-4d3c-b1ff-bda3b6d9d2bd",
+          "839e2ab3-e119-4da0-89c5-d96752887047",
+          "ebf9a310-8c66-48c2-a88b-844e03e5e855"
+        ],
+        "activation_level": 1.0,
+        "timestamp": 1761081148.179372
+      },
+      "Alex": {
+        "agent_id": "Alex",
+        "current_phase": "reflection",
+        "goals": [
+          "support_senior_researchers",
+          "learn_new_methods",
+          "contribute_meaningfully",
+          "contribute_to_task: Develop AI-Human Collaboration Framework"
+        ],
+        "beliefs": {
+          "role": "research_assistant",
+          "learning_mode": "active",
+          "eagerness": 0.9,
+          "visible_agents": [
+            "Dr_Alice",
+            "Dr_Bob",
+            "Dr_Carol"
+          ],
+          "recent_changes": 65,
+          "potential_collaborators": [
+            "Dr_Bob",
+            "Dr_Carol",
+            "Dr_Alice"
+          ],
+          "trust_levels": {}
+        },
+        "intentions": [
+          "validate_learning_for_learn_new_methods",
+          "execute_contribute_meaningfully",
+          "execute_contribute_to_task: Develop AI-Human Collaboration Framework"
+        ],
+        "working_memory": {
+          "last_perception": 1761081155.1907341,
+          "last_reasoning": 1761081156.1924994,
+          "last_planning": 1761081156.6932137,
+          "executed_execute_support_senior_researchers": 1761081157.1940901,
+          "executed_gather_information_for_learn_new_methods": 1761081157.1940913,
+          "executed_process_knowledge_for_learn_new_methods": 1761081157.1940918,
+          "last_execution": 1761081157.1940932,
+          "last_learning": 1761081157.6948347,
+          "last_reflection": 1761081154.6904945,
+          "executed_validate_learning_for_learn_new_methods": 1761081153.6889715,
+          "executed_execute_contribute_meaningfully": 1761081153.6889722,
+          "executed_execute_contribute_to_task: Develop AI-Human Collaboration Framework": 1761081153.6889734
+        },
+        "attention_focus": [
+          "5e518be5-b765-4f25-8790-15aacb51fd36",
+          "5fde95c8-443b-4d4c-9fd3-28f30250ba88",
+          "67b08757-e4d6-464d-81c3-d1253881dfd4",
+          "4ae8d9af-4175-4136-8b70-356d55e7949f",
+          "65c95a13-5121-4aab-907f-b88e45561522",
+          "3e023ffb-db73-4f3a-93fa-9cb0404fd166",
+          "0155dfd6-a628-486c-ab6b-570a4e6d47c7",
+          "b9fcc211-faf7-4d1c-b1ed-ca7816bd7326"
+        ],
+        "activation_level": 1.0,
+        "timestamp": 1761081148.179597
+      }
+    }
+  },
+  "agents": {
+    "count": 4,
+    "names": [
+      "Dr_Alice",
+      "Dr_Bob",
+      "Dr_Carol",
+      "Alex"
+    ],
+    "active_cognitive_cycles": 0
+  },
+  "topology": {
+    "agents": {
+      "Dr_Alice": {
+        "capabilities": [
+          "project_management",
+          "strategic_planning",
+          "coordination"
+        ],
+        "goals": [
+          "coordinate_research_project",
+          "ensure_team_collaboration",
+          "deliver_results",
+          "contribute_to_task: Develop AI-Human Collaboration Framework"
+        ],
+        "beliefs_count": 3,
+        "memories_count": 0,
+        "cognitive_state": "reflection"
+      },
+      "Dr_Bob": {
+        "capabilities": [
+          "data_analysis",
+          "machine_learning",
+          "statistics"
+        ],
+        "goals": [
+          "analyze_research_data",
+          "build_predictive_models",
+          "share_insights",
+          "contribute_to_task: Develop AI-Human Collaboration Framework"
+        ],
+        "beliefs_count": 3,
+        "memories_count": 4,
+        "cognitive_state": "reflection"
+      },
+      "Dr_Carol": {
+        "capabilities": [
+          "domain_expertise",
+          "literature_review",
+          "hypothesis_generation"
+        ],
+        "goals": [
+          "provide_domain_insights",
+          "validate_hypotheses",
+          "mentor_team",
+          "contribute_to_task: Develop AI-Human Collaboration Framework"
+        ],
+        "beliefs_count": 3,
+        "memories_count": 4,
+        "cognitive_state": "reflection"
+      },
+      "Alex": {
+        "capabilities": [
+          "research_support",
+          "data_collection",
+          "learning"
+        ],
+        "goals": [
+          "support_senior_researchers",
+          "learn_new_methods",
+          "contribute_meaningfully",
+          "contribute_to_task: Develop AI-Human Collaboration Framework"
+        ],
+        "beliefs_count": 3,
+        "memories_count": 0,
+        "cognitive_state": "reflection"
+      }
+    },
+    "relationships": {
+      "collaborations": [
+        {
+          "agent1": "Dr_Alice",
+          "agent2": "Dr_Bob",
+          "type": "Develop AI-Human Collaboration Framework"
+        },
+        {
+          "agent1": "Dr_Alice",
+          "agent2": "Dr_Carol",
+          "type": "Develop AI-Human Collaboration Framework"
+        },
+        {
+          "agent1": "Dr_Alice",
+          "agent2": "Alex",
+          "type": "Develop AI-Human Collaboration Framework"
+        },
+        {
+          "agent1": "Dr_Bob",
+          "agent2": "Dr_Carol",
+          "type": "Develop AI-Human Collaboration Framework"
+        },
+        {
+          "agent1": "Dr_Bob",
+          "agent2": "Alex",
+          "type": "Develop AI-Human Collaboration Framework"
+        },
+        {
+          "agent1": "Dr_Carol",
+          "agent2": "Alex",
+          "type": "Develop AI-Human Collaboration Framework"
+        }
+      ],
+      "trust_relationships": [
+        {
+          "trustor": "Dr_Bob",
+          "trustee": "Dr_Alice",
+          "trust_level": 0.8
+        },
+        {
+          "trustor": "Dr_Bob",
+          "trustee": "Dr_Carol",
+          "trust_level": 0.85
+        },
+        {
+          "trustor": "Dr_Bob",
+          "trustee": "Alex",
+          "trust_level": 0.7
+        },
+        {
+          "trustor": "Dr_Carol",
+          "trustee": "Dr_Alice",
+          "trust_level": 0.88
+        },
+        {
+          "trustor": "Dr_Carol",
+          "trustee": "Dr_Bob",
+          "trust_level": 0.82
+        },
+        {
+          "trustor": "Dr_Carol",
+          "trustee": "Alex",
+          "trust_level": 0.75
+        }
+      ],
+      "knowledge_links": [
+        {
+          "source": "Dr_Bob",
+          "target": "data_analysis",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Dr_Bob",
+          "target": "machine_learning",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Dr_Bob",
+          "target": "statistics",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Dr_Carol",
+          "target": "domain_expertise",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Dr_Carol",
+          "target": "literature_review",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Dr_Carol",
+          "target": "hypothesis_generation",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Alex",
+          "target": "research_support",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Alex",
+          "target": "data_collection",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Alex",
+          "target": "learning",
+          "knowledge_type": "CapabilityNode"
+        }
+      ]
+    },
+    "statistics": {
+      "total_agents": 4,
+      "total_atoms": 65,
+      "active_collaborations": 6,
+      "average_trust_level": 0.7999999999999999
+    }
+  }
+}

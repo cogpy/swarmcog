@@ -1,0 +1,4765 @@
+{
+  "system": {
+    "running": false,
+    "uptime_seconds": 8.016000747680664,
+    "total_interactions": 0,
+    "config": {
+      "processing_mode": "asynchronous",
+      "cognitive_cycle_interval": 1.0,
+      "max_agents": 15,
+      "enable_distributed_processing": false,
+      "log_level": "INFO",
+      "agentspace_name": "dev_team_space"
+    }
+  },
+  "agentspace": {
+    "name": "dev_team_space",
+    "atoms": {
+      "f9bd62f6-c728-4112-a142-8a632d277c54": {
+        "id": "f9bd62f6-c728-4112-a142-8a632d277c54",
+        "type": "AgentNode",
+        "name": "Alex_Architect",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2625403,
+        "metadata": {}
+      },
+      "c315972c-cf86-4b0b-a1f7-d435b5fc7537": {
+        "id": "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+        "type": "AgentNode",
+        "name": "Sarah_Senior",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2628384,
+        "metadata": {}
+      },
+      "3ff4cb18-00e3-439b-bd77-66d5692924d8": {
+        "id": "3ff4cb18-00e3-439b-bd77-66d5692924d8",
+        "type": "CapabilityNode",
+        "name": "full_stack_development",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2628853,
+        "metadata": {
+          "name": "full_stack_development",
+          "description": "Capability: full_stack_development",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "46d4bb91-d8d4-4f8a-ac4c-b7f98b77de1b": {
+        "id": "46d4bb91-d8d4-4f8a-ac4c-b7f98b77de1b",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_46d4bb91",
+        "outgoing": [
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+          "3ff4cb18-00e3-439b-bd77-66d5692924d8"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2629135,
+        "metadata": {}
+      },
+      "a8bf9920-9776-4e38-9032-6b545cfde08e": {
+        "id": "a8bf9920-9776-4e38-9032-6b545cfde08e",
+        "type": "CapabilityNode",
+        "name": "code_optimization",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2629344,
+        "metadata": {
+          "name": "code_optimization",
+          "description": "Capability: code_optimization",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "042c580a-4bc4-4c92-be90-08a14fdf8642": {
+        "id": "042c580a-4bc4-4c92-be90-08a14fdf8642",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_042c580a",
+        "outgoing": [
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+          "a8bf9920-9776-4e38-9032-6b545cfde08e"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2629497,
+        "metadata": {}
+      },
+      "350ff89c-8470-4e0e-bd36-7810fb302252": {
+        "id": "350ff89c-8470-4e0e-bd36-7810fb302252",
+        "type": "CapabilityNode",
+        "name": "mentoring",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2629604,
+        "metadata": {
+          "name": "mentoring",
+          "description": "Capability: mentoring",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "48b2b165-589a-4534-b35d-95325e5f00a1": {
+        "id": "48b2b165-589a-4534-b35d-95325e5f00a1",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_48b2b165",
+        "outgoing": [
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+          "350ff89c-8470-4e0e-bd36-7810fb302252"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2629719,
+        "metadata": {}
+      },
+      "de231b6f-18a7-46c2-a756-aadc80d63ebb": {
+        "id": "de231b6f-18a7-46c2-a756-aadc80d63ebb",
+        "type": "GoalNode",
+        "name": "implement_core_features",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.1,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2629867,
+        "metadata": {}
+      },
+      "749092eb-f9e3-42cd-94a1-2af23170f4ce": {
+        "id": "749092eb-f9e3-42cd-94a1-2af23170f4ce",
+        "type": "GoalNode",
+        "name": "maintain_code_quality",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.1,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2630002,
+        "metadata": {}
+      },
+      "386f9d72-ebbc-47bd-911e-3e8de782f141": {
+        "id": "386f9d72-ebbc-47bd-911e-3e8de782f141",
+        "type": "GoalNode",
+        "name": "mentor_junior_devs",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.1,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2630105,
+        "metadata": {}
+      },
+      "a28e2f2c-5530-4ffd-a6d6-7a6ea6ba076c": {
+        "id": "a28e2f2c-5530-4ffd-a6d6-7a6ea6ba076c",
+        "type": "BeliefNode",
+        "name": "role",
+        "value": "senior_developer",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2630312,
+        "metadata": {}
+      },
+      "aedfc893-d405-4dea-a0c5-06438f0af47c": {
+        "id": "aedfc893-d405-4dea-a0c5-06438f0af47c",
+        "type": "BeliefNode",
+        "name": "languages",
+        "value": [
+          "python",
+          "javascript",
+          "go"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2630436,
+        "metadata": {}
+      },
+      "465f5887-dd4e-434a-b42f-e0024e3b6822": {
+        "id": "465f5887-dd4e-434a-b42f-e0024e3b6822",
+        "type": "BeliefNode",
+        "name": "frameworks",
+        "value": [
+          "fastapi",
+          "react",
+          "kubernetes"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.263054,
+        "metadata": {}
+      },
+      "b093861f-897f-4269-a3b0-59965983c5be": {
+        "id": "b093861f-897f-4269-a3b0-59965983c5be",
+        "type": "BeliefNode",
+        "name": "code_quality_standards",
+        "value": "high",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.263063,
+        "metadata": {}
+      },
+      "9740e320-2d48-40fa-a3a0-46d49ccddefd": {
+        "id": "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+        "type": "AgentNode",
+        "name": "Jake_Frontend",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2631443,
+        "metadata": {}
+      },
+      "300f8abf-7ddc-4722-b38a-cd72f638a42b": {
+        "id": "300f8abf-7ddc-4722-b38a-cd72f638a42b",
+        "type": "CapabilityNode",
+        "name": "ui_development",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2631807,
+        "metadata": {
+          "name": "ui_development",
+          "description": "Capability: ui_development",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "fd2a93e5-977e-4f72-ae52-3cc326cc33d3": {
+        "id": "fd2a93e5-977e-4f72-ae52-3cc326cc33d3",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_fd2a93e5",
+        "outgoing": [
+          "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+          "300f8abf-7ddc-4722-b38a-cd72f638a42b"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2632084,
+        "metadata": {}
+      },
+      "349d62af-985d-4d3b-8667-bb351557e15f": {
+        "id": "349d62af-985d-4d3b-8667-bb351557e15f",
+        "type": "CapabilityNode",
+        "name": "user_experience",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2632296,
+        "metadata": {
+          "name": "user_experience",
+          "description": "Capability: user_experience",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "a7adcf2e-e5c8-4555-b98d-56d962b670b5": {
+        "id": "a7adcf2e-e5c8-4555-b98d-56d962b670b5",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_a7adcf2e",
+        "outgoing": [
+          "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+          "349d62af-985d-4d3b-8667-bb351557e15f"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.26325,
+        "metadata": {}
+      },
+      "58769fb6-ebc0-4122-a7ee-fbbeecd903d9": {
+        "id": "58769fb6-ebc0-4122-a7ee-fbbeecd903d9",
+        "type": "CapabilityNode",
+        "name": "frontend_frameworks",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2632604,
+        "metadata": {
+          "name": "frontend_frameworks",
+          "description": "Capability: frontend_frameworks",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "447bd2df-434b-4d0d-bfae-4594ef739472": {
+        "id": "447bd2df-434b-4d0d-bfae-4594ef739472",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_447bd2df",
+        "outgoing": [
+          "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+          "58769fb6-ebc0-4122-a7ee-fbbeecd903d9"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.26328,
+        "metadata": {}
+      },
+      "11ce38c4-c2fb-43b8-af60-d039d4e8c037": {
+        "id": "11ce38c4-c2fb-43b8-af60-d039d4e8c037",
+        "type": "GoalNode",
+        "name": "create_intuitive_interfaces",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.1,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.26329,
+        "metadata": {}
+      },
+      "9c6f7157-5616-41b1-a700-fcc87d74c628": {
+        "id": "9c6f7157-5616-41b1-a700-fcc87d74c628",
+        "type": "GoalNode",
+        "name": "optimize_user_experience",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.1,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2633014,
+        "metadata": {}
+      },
+      "114d1d75-b55b-4211-b582-67ab7a5d707b": {
+        "id": "114d1d75-b55b-4211-b582-67ab7a5d707b",
+        "type": "GoalNode",
+        "name": "implement_responsive_design",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.1,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2633111,
+        "metadata": {}
+      },
+      "4c2ef845-d6ae-4939-bbbb-e4b82d0d9e35": {
+        "id": "4c2ef845-d6ae-4939-bbbb-e4b82d0d9e35",
+        "type": "BeliefNode",
+        "name": "role",
+        "value": "frontend_developer",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2633233,
+        "metadata": {}
+      },
+      "b4f17a9a-34b0-455b-9680-22f26ef6e2ec": {
+        "id": "b4f17a9a-34b0-455b-9680-22f26ef6e2ec",
+        "type": "BeliefNode",
+        "name": "specializations",
+        "value": [
+          "react",
+          "vue",
+          "css",
+          "ux_design"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2633374,
+        "metadata": {}
+      },
+      "92621f0e-b098-433b-b715-e3e882ff4adc": {
+        "id": "92621f0e-b098-433b-b715-e3e882ff4adc",
+        "type": "BeliefNode",
+        "name": "responsive_design",
+        "value": true,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2633486,
+        "metadata": {}
+      },
+      "5402406b-142b-4ea6-bcd3-b6ff430de2a9": {
+        "id": "5402406b-142b-4ea6-bcd3-b6ff430de2a9",
+        "type": "BeliefNode",
+        "name": "accessibility_focus",
+        "value": true,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2633574,
+        "metadata": {}
+      },
+      "c0987ff3-8f06-45e6-ae66-f1914e81f730": {
+        "id": "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+        "type": "AgentNode",
+        "name": "Maria_QA",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2634335,
+        "metadata": {}
+      },
+      "62a19f98-f4d4-42bc-ae9f-29bb1d8002ff": {
+        "id": "62a19f98-f4d4-42bc-ae9f-29bb1d8002ff",
+        "type": "CapabilityNode",
+        "name": "test_automation",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2634666,
+        "metadata": {
+          "name": "test_automation",
+          "description": "Capability: test_automation",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "79f6861d-5f07-4b38-bf8f-7da8046913c7": {
+        "id": "79f6861d-5f07-4b38-bf8f-7da8046913c7",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_79f6861d",
+        "outgoing": [
+          "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+          "62a19f98-f4d4-42bc-ae9f-29bb1d8002ff"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.263497,
+        "metadata": {}
+      },
+      "ad7dc86d-d7a8-469d-8144-6b039019a907": {
+        "id": "ad7dc86d-d7a8-469d-8144-6b039019a907",
+        "type": "CapabilityNode",
+        "name": "quality_assurance",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2635238,
+        "metadata": {
+          "name": "quality_assurance",
+          "description": "Capability: quality_assurance",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "1a2ab239-9e27-4fe3-9990-ebb7fa6a3297": {
+        "id": "1a2ab239-9e27-4fe3-9990-ebb7fa6a3297",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_1a2ab239",
+        "outgoing": [
+          "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+          "ad7dc86d-d7a8-469d-8144-6b039019a907"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2635384,
+        "metadata": {}
+      },
+      "b5eed1a0-2ab2-4599-b63f-18167e25e673": {
+        "id": "b5eed1a0-2ab2-4599-b63f-18167e25e673",
+        "type": "CapabilityNode",
+        "name": "bug_detection",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2635493,
+        "metadata": {
+          "name": "bug_detection",
+          "description": "Capability: bug_detection",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "a346cc6b-029f-4d0b-8b44-094ddf1b7305": {
+        "id": "a346cc6b-029f-4d0b-8b44-094ddf1b7305",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_a346cc6b",
+        "outgoing": [
+          "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+          "b5eed1a0-2ab2-4599-b63f-18167e25e673"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2635658,
+        "metadata": {}
+      },
+      "4bb5bea8-e3aa-4df6-a726-b0acb059db79": {
+        "id": "4bb5bea8-e3aa-4df6-a726-b0acb059db79",
+        "type": "GoalNode",
+        "name": "ensure_software_quality",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.1,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2635753,
+        "metadata": {}
+      },
+      "a2010323-216c-4a68-980a-e08fb0ca51de": {
+        "id": "a2010323-216c-4a68-980a-e08fb0ca51de",
+        "type": "GoalNode",
+        "name": "automate_testing",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.1,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2635863,
+        "metadata": {}
+      },
+      "e3f20ef1-0f2d-4694-9712-e8b505ffe937": {
+        "id": "e3f20ef1-0f2d-4694-9712-e8b505ffe937",
+        "type": "GoalNode",
+        "name": "prevent_regressions",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.1,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2635977,
+        "metadata": {}
+      },
+      "3cc17cc6-1a50-4589-9783-e1194a13bb55": {
+        "id": "3cc17cc6-1a50-4589-9783-e1194a13bb55",
+        "type": "BeliefNode",
+        "name": "role",
+        "value": "qa_engineer",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2636082,
+        "metadata": {}
+      },
+      "05fe15d2-188d-4c05-ba5f-4ccfb04a1888": {
+        "id": "05fe15d2-188d-4c05-ba5f-4ccfb04a1888",
+        "type": "BeliefNode",
+        "name": "testing_types",
+        "value": [
+          "unit",
+          "integration",
+          "e2e",
+          "performance"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2636175,
+        "metadata": {}
+      },
+      "cc1bb7f0-a79a-41dc-ba50-d4a3ce5adbf5": {
+        "id": "cc1bb7f0-a79a-41dc-ba50-d4a3ce5adbf5",
+        "type": "BeliefNode",
+        "name": "automation_tools",
+        "value": [
+          "pytest",
+          "selenium",
+          "jest"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2636266,
+        "metadata": {}
+      },
+      "02327134-13c1-4b2a-adaf-b8ad6f9c97fb": {
+        "id": "02327134-13c1-4b2a-adaf-b8ad6f9c97fb",
+        "type": "BeliefNode",
+        "name": "quality_standards",
+        "value": "zero_defects",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2636347,
+        "metadata": {}
+      },
+      "7d958d6c-5654-4d73-bcff-503dacd20764": {
+        "id": "7d958d6c-5654-4d73-bcff-503dacd20764",
+        "type": "AgentNode",
+        "name": "Chris_DevOps",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2637303,
+        "metadata": {}
+      },
+      "1bd17a11-84b6-4599-b862-38fbc3f6ae54": {
+        "id": "1bd17a11-84b6-4599-b862-38fbc3f6ae54",
+        "type": "CapabilityNode",
+        "name": "infrastructure_automation",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2637756,
+        "metadata": {
+          "name": "infrastructure_automation",
+          "description": "Capability: infrastructure_automation",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "e302e468-ee36-47c8-87d6-c89d1d77f293": {
+        "id": "e302e468-ee36-47c8-87d6-c89d1d77f293",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_e302e468",
+        "outgoing": [
+          "7d958d6c-5654-4d73-bcff-503dacd20764",
+          "1bd17a11-84b6-4599-b862-38fbc3f6ae54"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2638106,
+        "metadata": {}
+      },
+      "2f2dd782-c476-4904-8c3f-e4342a227d4f": {
+        "id": "2f2dd782-c476-4904-8c3f-e4342a227d4f",
+        "type": "CapabilityNode",
+        "name": "ci_cd",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2638235,
+        "metadata": {
+          "name": "ci_cd",
+          "description": "Capability: ci_cd",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "edd897f5-d921-49f3-9931-c18b1ca8874d": {
+        "id": "edd897f5-d921-49f3-9931-c18b1ca8874d",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_edd897f5",
+        "outgoing": [
+          "7d958d6c-5654-4d73-bcff-503dacd20764",
+          "2f2dd782-c476-4904-8c3f-e4342a227d4f"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.263838,
+        "metadata": {}
+      },
+      "e7634516-6fb8-4ec1-8aa1-f9eaba8ab6e4": {
+        "id": "e7634516-6fb8-4ec1-8aa1-f9eaba8ab6e4",
+        "type": "CapabilityNode",
+        "name": "monitoring",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2638474,
+        "metadata": {
+          "name": "monitoring",
+          "description": "Capability: monitoring",
+          "strength": 0.5,
+          "experience": 0
+        }
+      },
+      "0a40a350-fb66-4638-8702-2a38287cc30a": {
+        "id": "0a40a350-fb66-4638-8702-2a38287cc30a",
+        "type": "KnowledgeLink",
+        "name": "KnowledgeLink_0a40a350",
+        "outgoing": [
+          "7d958d6c-5654-4d73-bcff-503dacd20764",
+          "e7634516-6fb8-4ec1-8aa1-f9eaba8ab6e4"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2638643,
+        "metadata": {}
+      },
+      "ead962ce-1003-4441-93bb-ad4335c08965": {
+        "id": "ead962ce-1003-4441-93bb-ad4335c08965",
+        "type": "GoalNode",
+        "name": "automate_deployments",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.1,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.263873,
+        "metadata": {}
+      },
+      "602be69a-143b-44c4-86c8-673db20d4928": {
+        "id": "602be69a-143b-44c4-86c8-673db20d4928",
+        "type": "GoalNode",
+        "name": "ensure_reliability",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.1,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2638836,
+        "metadata": {}
+      },
+      "4610d20a-c272-46b4-925d-398dc13f860e": {
+        "id": "4610d20a-c272-46b4-925d-398dc13f860e",
+        "type": "GoalNode",
+        "name": "optimize_infrastructure",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.1,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2638924,
+        "metadata": {}
+      },
+      "ed8a8326-955e-4e02-b554-06269f344638": {
+        "id": "ed8a8326-955e-4e02-b554-06269f344638",
+        "type": "BeliefNode",
+        "name": "role",
+        "value": "devops_engineer",
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2639024,
+        "metadata": {}
+      },
+      "3d496314-5fb5-43bc-a6bd-be71480dd9b0": {
+        "id": "3d496314-5fb5-43bc-a6bd-be71480dd9b0",
+        "type": "BeliefNode",
+        "name": "cloud_platforms",
+        "value": [
+          "aws",
+          "gcp",
+          "azure"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2639117,
+        "metadata": {}
+      },
+      "d68a09cf-376c-4e94-a1c8-6390553b6b1f": {
+        "id": "d68a09cf-376c-4e94-a1c8-6390553b6b1f",
+        "type": "BeliefNode",
+        "name": "tools",
+        "value": [
+          "docker",
+          "kubernetes",
+          "terraform",
+          "jenkins"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2639203,
+        "metadata": {}
+      },
+      "b0974f20-59b6-450c-bfa2-583d8c90fb29": {
+        "id": "b0974f20-59b6-450c-bfa2-583d8c90fb29",
+        "type": "BeliefNode",
+        "name": "monitoring_focus",
+        "value": true,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2639291,
+        "metadata": {}
+      },
+      "fb4d3523-3a4a-4d75-990c-6036b42a55fe": {
+        "id": "fb4d3523-3a4a-4d75-990c-6036b42a55fe",
+        "type": "TrustLink",
+        "name": "TrustLink_fb4d3523",
+        "outgoing": [
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+          "f9bd62f6-c728-4112-a142-8a632d277c54"
+        ],
+        "truth_value": {
+          "strength": 0.88,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2640886,
+        "metadata": {}
+      },
+      "e5d28804-9400-4c80-81cd-94ffb5da52c6": {
+        "id": "e5d28804-9400-4c80-81cd-94ffb5da52c6",
+        "type": "MemoryNode",
+        "name": "trust_establishment_1",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2641065,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Alex_Architect",
+            "trust_level": 0.88,
+            "timestamp": 1761081452.2640944,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081452.2640958
+        }
+      },
+      "896df887-61f4-4c07-92f7-cf17d170a49d": {
+        "id": "896df887-61f4-4c07-92f7-cf17d170a49d",
+        "type": "TrustLink",
+        "name": "TrustLink_896df887",
+        "outgoing": [
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+          "9740e320-2d48-40fa-a3a0-46d49ccddefd"
+        ],
+        "truth_value": {
+          "strength": 0.8,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2641654,
+        "metadata": {}
+      },
+      "fb7ab999-2282-4968-a646-4c61023e7d4b": {
+        "id": "fb7ab999-2282-4968-a646-4c61023e7d4b",
+        "type": "MemoryNode",
+        "name": "trust_establishment_2",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.264179,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Jake_Frontend",
+            "trust_level": 0.8,
+            "timestamp": 1761081452.2641695,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081452.2641702
+        }
+      },
+      "f2a50617-1ba7-424d-a801-98259f0fca63": {
+        "id": "f2a50617-1ba7-424d-a801-98259f0fca63",
+        "type": "TrustLink",
+        "name": "TrustLink_f2a50617",
+        "outgoing": [
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+          "c0987ff3-8f06-45e6-ae66-f1914e81f730"
+        ],
+        "truth_value": {
+          "strength": 0.85,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.264218,
+        "metadata": {}
+      },
+      "7342862c-0e47-4b6c-b7c0-1c1f222923c8": {
+        "id": "7342862c-0e47-4b6c-b7c0-1c1f222923c8",
+        "type": "MemoryNode",
+        "name": "trust_establishment_3",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.264229,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Maria_QA",
+            "trust_level": 0.85,
+            "timestamp": 1761081452.2642212,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081452.264222
+        }
+      },
+      "adabbf65-0c4b-4f0a-b6a8-9573091d389d": {
+        "id": "adabbf65-0c4b-4f0a-b6a8-9573091d389d",
+        "type": "TrustLink",
+        "name": "TrustLink_adabbf65",
+        "outgoing": [
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+          "7d958d6c-5654-4d73-bcff-503dacd20764"
+        ],
+        "truth_value": {
+          "strength": 0.8,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2642686,
+        "metadata": {}
+      },
+      "0dba0aea-755b-4898-94d1-84b96aceacbd": {
+        "id": "0dba0aea-755b-4898-94d1-84b96aceacbd",
+        "type": "MemoryNode",
+        "name": "trust_establishment_4",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2642794,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Chris_DevOps",
+            "trust_level": 0.8,
+            "timestamp": 1761081452.2642715,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081452.2642722
+        }
+      },
+      "6d5cb46b-e623-42fb-a49e-6e1c60cfd192": {
+        "id": "6d5cb46b-e623-42fb-a49e-6e1c60cfd192",
+        "type": "TrustLink",
+        "name": "TrustLink_6d5cb46b",
+        "outgoing": [
+          "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537"
+        ],
+        "truth_value": {
+          "strength": 0.82,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2643096,
+        "metadata": {}
+      },
+      "ae0081db-6640-4b99-8979-02827bb3df6c": {
+        "id": "ae0081db-6640-4b99-8979-02827bb3df6c",
+        "type": "MemoryNode",
+        "name": "trust_establishment_1",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2643738,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Sarah_Senior",
+            "trust_level": 0.82,
+            "timestamp": 1761081452.2643642,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081452.264365
+        }
+      },
+      "06a870ed-bac9-498b-8742-d3deb8d9c696": {
+        "id": "06a870ed-bac9-498b-8742-d3deb8d9c696",
+        "type": "TrustLink",
+        "name": "TrustLink_06a870ed",
+        "outgoing": [
+          "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+          "c0987ff3-8f06-45e6-ae66-f1914e81f730"
+        ],
+        "truth_value": {
+          "strength": 0.8,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2644053,
+        "metadata": {}
+      },
+      "87a0a932-989c-4188-8adf-3be6f7eeb567": {
+        "id": "87a0a932-989c-4188-8adf-3be6f7eeb567",
+        "type": "MemoryNode",
+        "name": "trust_establishment_2",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2644157,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Maria_QA",
+            "trust_level": 0.8,
+            "timestamp": 1761081452.2644083,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081452.2644088
+        }
+      },
+      "508a5dd2-6b7a-4c0d-b523-8267bddd33b7": {
+        "id": "508a5dd2-6b7a-4c0d-b523-8267bddd33b7",
+        "type": "TrustLink",
+        "name": "TrustLink_508a5dd2",
+        "outgoing": [
+          "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537"
+        ],
+        "truth_value": {
+          "strength": 0.9,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2644541,
+        "metadata": {}
+      },
+      "ff92f17c-07d9-4211-af72-cf4ee6760b8c": {
+        "id": "ff92f17c-07d9-4211-af72-cf4ee6760b8c",
+        "type": "MemoryNode",
+        "name": "trust_establishment_1",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.264464,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Sarah_Senior",
+            "trust_level": 0.9,
+            "timestamp": 1761081452.2644567,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081452.2644572
+        }
+      },
+      "4c0c7487-04f4-47e6-82a4-488bbf71edb8": {
+        "id": "4c0c7487-04f4-47e6-82a4-488bbf71edb8",
+        "type": "TrustLink",
+        "name": "TrustLink_4c0c7487",
+        "outgoing": [
+          "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+          "7d958d6c-5654-4d73-bcff-503dacd20764"
+        ],
+        "truth_value": {
+          "strength": 0.85,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.26449,
+        "metadata": {}
+      },
+      "d0ddfa91-7a2a-40b1-909c-5a1e31b8d52a": {
+        "id": "d0ddfa91-7a2a-40b1-909c-5a1e31b8d52a",
+        "type": "MemoryNode",
+        "name": "trust_establishment_2",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2645,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Chris_DevOps",
+            "trust_level": 0.85,
+            "timestamp": 1761081452.2644928,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081452.264493
+        }
+      },
+      "6e167e0b-e6d8-4212-86fb-eca3162c1a64": {
+        "id": "6e167e0b-e6d8-4212-86fb-eca3162c1a64",
+        "type": "TrustLink",
+        "name": "TrustLink_6e167e0b",
+        "outgoing": [
+          "7d958d6c-5654-4d73-bcff-503dacd20764",
+          "f9bd62f6-c728-4112-a142-8a632d277c54"
+        ],
+        "truth_value": {
+          "strength": 0.87,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2645295,
+        "metadata": {}
+      },
+      "a16036c8-3f49-41b3-944d-f1e8d251a578": {
+        "id": "a16036c8-3f49-41b3-944d-f1e8d251a578",
+        "type": "MemoryNode",
+        "name": "trust_establishment_1",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.26454,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Alex_Architect",
+            "trust_level": 0.87,
+            "timestamp": 1761081452.2645323,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081452.2645328
+        }
+      },
+      "568fa6bf-60e3-40f7-b653-8e99a2441330": {
+        "id": "568fa6bf-60e3-40f7-b653-8e99a2441330",
+        "type": "TrustLink",
+        "name": "TrustLink_568fa6bf",
+        "outgoing": [
+          "7d958d6c-5654-4d73-bcff-503dacd20764",
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537"
+        ],
+        "truth_value": {
+          "strength": 0.85,
+          "confidence": 0.8
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.264566,
+        "metadata": {}
+      },
+      "92596ef0-5d86-4908-88a7-5047225d1262": {
+        "id": "92596ef0-5d86-4908-88a7-5047225d1262",
+        "type": "MemoryNode",
+        "name": "trust_establishment_2",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2645755,
+        "metadata": {
+          "type": "trust_establishment",
+          "content": {
+            "action": "establish_trust",
+            "target_agent": "Sarah_Senior",
+            "trust_level": 0.85,
+            "timestamp": 1761081452.2645683,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081452.2645688
+        }
+      },
+      "74c93bbc-e5c8-4b7a-a054-6f220c1855b2": {
+        "id": "74c93bbc-e5c8-4b7a-a054-6f220c1855b2",
+        "type": "KnowledgeLink",
+        "name": "development_practices_1761081452",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2647028,
+        "metadata": {
+          "type": "development_practices",
+          "content": {
+            "coding_standards": [
+              "pep8",
+              "clean_code",
+              "solid_principles"
+            ],
+            "testing_approach": [
+              "tdd",
+              "bdd",
+              "continuous_testing"
+            ],
+            "code_review_process": [
+              "peer_review",
+              "automated_checks",
+              "security_scan"
+            ]
+          },
+          "source": "Sarah_Senior",
+          "timestamp": 1761081452.2646828
+        }
+      },
+      "8a523aa6-5a41-41fc-9fde-1bd4734b01a0": {
+        "id": "8a523aa6-5a41-41fc-9fde-1bd4734b01a0",
+        "type": "MemoryNode",
+        "name": "knowledge_sharing_5",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2647188,
+        "metadata": {
+          "type": "knowledge_sharing",
+          "content": {
+            "action": "share_knowledge",
+            "knowledge_type": "development_practices",
+            "target": "all_agents",
+            "shared_at": 1761081452.264708,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081452.2647092
+        }
+      },
+      "81e87873-8ec7-4aca-97ae-1fff5f061efe": {
+        "id": "81e87873-8ec7-4aca-97ae-1fff5f061efe",
+        "type": "KnowledgeLink",
+        "name": "quality_processes_1761081452",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.264748,
+        "metadata": {
+          "type": "quality_processes",
+          "content": {
+            "testing_pyramid": [
+              "unit_70",
+              "integration_20",
+              "e2e_10"
+            ],
+            "automation_strategy": [
+              "api_first",
+              "shift_left",
+              "continuous_testing"
+            ],
+            "quality_gates": [
+              "coverage_80",
+              "performance_sla",
+              "security_scan"
+            ]
+          },
+          "source": "Maria_QA",
+          "timestamp": 1761081452.2647393
+        }
+      },
+      "4aef8259-0771-4433-ae0b-fd0d2300ab20": {
+        "id": "4aef8259-0771-4433-ae0b-fd0d2300ab20",
+        "type": "MemoryNode",
+        "name": "knowledge_sharing_3",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2647586,
+        "metadata": {
+          "type": "knowledge_sharing",
+          "content": {
+            "action": "share_knowledge",
+            "knowledge_type": "quality_processes",
+            "target": "all_agents",
+            "shared_at": 1761081452.2647505,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081452.2647512
+        }
+      },
+      "db045d1e-0319-4c85-a327-1b477c1cf7e6": {
+        "id": "db045d1e-0319-4c85-a327-1b477c1cf7e6",
+        "type": "GoalNode",
+        "name": "contribute_to_task: Build Cloud-Native AI Platform",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2648458,
+        "metadata": {}
+      },
+      "7455b1fa-e088-43fb-8fea-90fbf31c2328": {
+        "id": "7455b1fa-e088-43fb-8fea-90fbf31c2328",
+        "type": "GoalNode",
+        "name": "contribute_to_task: Build Cloud-Native AI Platform",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.264867,
+        "metadata": {}
+      },
+      "8d629776-d94e-44de-95de-c9e9ae77f9fa": {
+        "id": "8d629776-d94e-44de-95de-c9e9ae77f9fa",
+        "type": "GoalNode",
+        "name": "contribute_to_task: Build Cloud-Native AI Platform",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.5,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2648802,
+        "metadata": {}
+      },
+      "ca50fbcd-cad3-46ab-8140-6589ae39e43d": {
+        "id": "ca50fbcd-cad3-46ab-8140-6589ae39e43d",
+        "type": "GoalNode",
+        "name": "contribute_to_task: Build Cloud-Native AI Platform",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.5,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2648904,
+        "metadata": {}
+      },
+      "40ed555b-a676-4fea-9687-8ce816384797": {
+        "id": "40ed555b-a676-4fea-9687-8ce816384797",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_40ed555b",
+        "outgoing": [
+          "f9bd62f6-c728-4112-a142-8a632d277c54",
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.26494,
+        "metadata": {
+          "collaboration_type": "Build Cloud-Native AI Platform"
+        }
+      },
+      "ca508213-bf56-469a-80de-d4cfc5bf0248": {
+        "id": "ca508213-bf56-469a-80de-d4cfc5bf0248",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_ca508213",
+        "outgoing": [
+          "f9bd62f6-c728-4112-a142-8a632d277c54",
+          "9740e320-2d48-40fa-a3a0-46d49ccddefd"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2649531,
+        "metadata": {
+          "collaboration_type": "Build Cloud-Native AI Platform"
+        }
+      },
+      "d57c74ec-64d2-47b6-b6d3-111690d0ca59": {
+        "id": "d57c74ec-64d2-47b6-b6d3-111690d0ca59",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_d57c74ec",
+        "outgoing": [
+          "f9bd62f6-c728-4112-a142-8a632d277c54",
+          "c0987ff3-8f06-45e6-ae66-f1914e81f730"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2649627,
+        "metadata": {
+          "collaboration_type": "Build Cloud-Native AI Platform"
+        }
+      },
+      "1205e33d-c4f1-4d7c-b7b9-0f5eb95a8ecf": {
+        "id": "1205e33d-c4f1-4d7c-b7b9-0f5eb95a8ecf",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_1205e33d",
+        "outgoing": [
+          "f9bd62f6-c728-4112-a142-8a632d277c54",
+          "7d958d6c-5654-4d73-bcff-503dacd20764"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.264971,
+        "metadata": {
+          "collaboration_type": "Build Cloud-Native AI Platform"
+        }
+      },
+      "b44c9896-7e84-4799-adac-cd1a0df67ce8": {
+        "id": "b44c9896-7e84-4799-adac-cd1a0df67ce8",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_b44c9896",
+        "outgoing": [
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+          "9740e320-2d48-40fa-a3a0-46d49ccddefd"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.264982,
+        "metadata": {
+          "collaboration_type": "Build Cloud-Native AI Platform"
+        }
+      },
+      "e4c208a6-d38b-47b3-9f47-7b59482a97e7": {
+        "id": "e4c208a6-d38b-47b3-9f47-7b59482a97e7",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_e4c208a6",
+        "outgoing": [
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+          "c0987ff3-8f06-45e6-ae66-f1914e81f730"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.26499,
+        "metadata": {
+          "collaboration_type": "Build Cloud-Native AI Platform"
+        }
+      },
+      "7084b442-6fb9-4414-94e2-440dcc8f4c8b": {
+        "id": "7084b442-6fb9-4414-94e2-440dcc8f4c8b",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_7084b442",
+        "outgoing": [
+          "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+          "7d958d6c-5654-4d73-bcff-503dacd20764"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2649984,
+        "metadata": {
+          "collaboration_type": "Build Cloud-Native AI Platform"
+        }
+      },
+      "b05dfed2-0afc-4899-8d05-a00a8de5088a": {
+        "id": "b05dfed2-0afc-4899-8d05-a00a8de5088a",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_b05dfed2",
+        "outgoing": [
+          "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+          "c0987ff3-8f06-45e6-ae66-f1914e81f730"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.2650063,
+        "metadata": {
+          "collaboration_type": "Build Cloud-Native AI Platform"
+        }
+      },
+      "6d8e1c0e-091c-4329-adec-9320fcf594c9": {
+        "id": "6d8e1c0e-091c-4329-adec-9320fcf594c9",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_6d8e1c0e",
+        "outgoing": [
+          "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+          "7d958d6c-5654-4d73-bcff-503dacd20764"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.265014,
+        "metadata": {
+          "collaboration_type": "Build Cloud-Native AI Platform"
+        }
+      },
+      "db0bc1d2-83e9-4beb-bbb5-5ba85f413e04": {
+        "id": "db0bc1d2-83e9-4beb-bbb5-5ba85f413e04",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_db0bc1d2",
+        "outgoing": [
+          "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+          "7d958d6c-5654-4d73-bcff-503dacd20764"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081452.265024,
+        "metadata": {
+          "collaboration_type": "Build Cloud-Native AI Platform"
+        }
+      },
+      "2d22f391-7f34-4a66-8e0a-9125671dbc24": {
+        "id": "2d22f391-7f34-4a66-8e0a-9125671dbc24",
+        "type": "CollaborationLink",
+        "name": "CollaborationLink_2d22f391",
+        "outgoing": [
+          "7d958d6c-5654-4d73-bcff-503dacd20764",
+          "f9bd62f6-c728-4112-a142-8a632d277c54"
+        ],
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.0,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081460.2811484,
+        "metadata": {
+          "collaboration_type": "infrastructure_design"
+        }
+      },
+      "17823e16-a76c-425d-98c8-3c1599bfe4d2": {
+        "id": "17823e16-a76c-425d-98c8-3c1599bfe4d2",
+        "type": "MemoryNode",
+        "name": "coordination_3",
+        "value": null,
+        "truth_value": {
+          "strength": 0.5,
+          "confidence": 0.0
+        },
+        "attention_value": {
+          "sti": 0.0,
+          "lti": 0.5,
+          "vlti": 0.0
+        },
+        "timestamp": 1761081460.2811716,
+        "metadata": {
+          "type": "coordination",
+          "content": {
+            "action": "coordinate_with_agent",
+            "partner": "Alex_Architect",
+            "coordination_type": "infrastructure_design",
+            "timestamp": 1761081460.281156,
+            "status": "success"
+          },
+          "importance": 0.5,
+          "timestamp": 1761081460.281158
+        }
+      }
+    },
+    "statistics": {
+      "total_atoms": 97,
+      "atom_types": {
+        "AgentNode": 5,
+        "CapabilityNode": 12,
+        "KnowledgeLink": 14,
+        "GoalNode": 16,
+        "BeliefNode": 16,
+        "TrustLink": 10,
+        "MemoryNode": 13,
+        "CollaborationLink": 11
+      },
+      "timestamp": 1761081460.281374
+    }
+  },
+  "cognitive_system": {
+    "microkernel": {
+      "running": false,
+      "processing_mode": "asynchronous",
+      "active_agents": 5,
+      "running_cycles": 0
+    },
+    "agentspace": {
+      "name": "dev_team_space",
+      "atoms": {
+        "f9bd62f6-c728-4112-a142-8a632d277c54": {
+          "id": "f9bd62f6-c728-4112-a142-8a632d277c54",
+          "type": "AgentNode",
+          "name": "Alex_Architect",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2625403,
+          "metadata": {}
+        },
+        "c315972c-cf86-4b0b-a1f7-d435b5fc7537": {
+          "id": "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+          "type": "AgentNode",
+          "name": "Sarah_Senior",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2628384,
+          "metadata": {}
+        },
+        "3ff4cb18-00e3-439b-bd77-66d5692924d8": {
+          "id": "3ff4cb18-00e3-439b-bd77-66d5692924d8",
+          "type": "CapabilityNode",
+          "name": "full_stack_development",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2628853,
+          "metadata": {
+            "name": "full_stack_development",
+            "description": "Capability: full_stack_development",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "46d4bb91-d8d4-4f8a-ac4c-b7f98b77de1b": {
+          "id": "46d4bb91-d8d4-4f8a-ac4c-b7f98b77de1b",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_46d4bb91",
+          "outgoing": [
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+            "3ff4cb18-00e3-439b-bd77-66d5692924d8"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2629135,
+          "metadata": {}
+        },
+        "a8bf9920-9776-4e38-9032-6b545cfde08e": {
+          "id": "a8bf9920-9776-4e38-9032-6b545cfde08e",
+          "type": "CapabilityNode",
+          "name": "code_optimization",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2629344,
+          "metadata": {
+            "name": "code_optimization",
+            "description": "Capability: code_optimization",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "042c580a-4bc4-4c92-be90-08a14fdf8642": {
+          "id": "042c580a-4bc4-4c92-be90-08a14fdf8642",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_042c580a",
+          "outgoing": [
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+            "a8bf9920-9776-4e38-9032-6b545cfde08e"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2629497,
+          "metadata": {}
+        },
+        "350ff89c-8470-4e0e-bd36-7810fb302252": {
+          "id": "350ff89c-8470-4e0e-bd36-7810fb302252",
+          "type": "CapabilityNode",
+          "name": "mentoring",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2629604,
+          "metadata": {
+            "name": "mentoring",
+            "description": "Capability: mentoring",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "48b2b165-589a-4534-b35d-95325e5f00a1": {
+          "id": "48b2b165-589a-4534-b35d-95325e5f00a1",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_48b2b165",
+          "outgoing": [
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+            "350ff89c-8470-4e0e-bd36-7810fb302252"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2629719,
+          "metadata": {}
+        },
+        "de231b6f-18a7-46c2-a756-aadc80d63ebb": {
+          "id": "de231b6f-18a7-46c2-a756-aadc80d63ebb",
+          "type": "GoalNode",
+          "name": "implement_core_features",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.1,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2629867,
+          "metadata": {}
+        },
+        "749092eb-f9e3-42cd-94a1-2af23170f4ce": {
+          "id": "749092eb-f9e3-42cd-94a1-2af23170f4ce",
+          "type": "GoalNode",
+          "name": "maintain_code_quality",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.1,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2630002,
+          "metadata": {}
+        },
+        "386f9d72-ebbc-47bd-911e-3e8de782f141": {
+          "id": "386f9d72-ebbc-47bd-911e-3e8de782f141",
+          "type": "GoalNode",
+          "name": "mentor_junior_devs",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.1,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2630105,
+          "metadata": {}
+        },
+        "a28e2f2c-5530-4ffd-a6d6-7a6ea6ba076c": {
+          "id": "a28e2f2c-5530-4ffd-a6d6-7a6ea6ba076c",
+          "type": "BeliefNode",
+          "name": "role",
+          "value": "senior_developer",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2630312,
+          "metadata": {}
+        },
+        "aedfc893-d405-4dea-a0c5-06438f0af47c": {
+          "id": "aedfc893-d405-4dea-a0c5-06438f0af47c",
+          "type": "BeliefNode",
+          "name": "languages",
+          "value": [
+            "python",
+            "javascript",
+            "go"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2630436,
+          "metadata": {}
+        },
+        "465f5887-dd4e-434a-b42f-e0024e3b6822": {
+          "id": "465f5887-dd4e-434a-b42f-e0024e3b6822",
+          "type": "BeliefNode",
+          "name": "frameworks",
+          "value": [
+            "fastapi",
+            "react",
+            "kubernetes"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.263054,
+          "metadata": {}
+        },
+        "b093861f-897f-4269-a3b0-59965983c5be": {
+          "id": "b093861f-897f-4269-a3b0-59965983c5be",
+          "type": "BeliefNode",
+          "name": "code_quality_standards",
+          "value": "high",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.263063,
+          "metadata": {}
+        },
+        "9740e320-2d48-40fa-a3a0-46d49ccddefd": {
+          "id": "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+          "type": "AgentNode",
+          "name": "Jake_Frontend",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2631443,
+          "metadata": {}
+        },
+        "300f8abf-7ddc-4722-b38a-cd72f638a42b": {
+          "id": "300f8abf-7ddc-4722-b38a-cd72f638a42b",
+          "type": "CapabilityNode",
+          "name": "ui_development",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2631807,
+          "metadata": {
+            "name": "ui_development",
+            "description": "Capability: ui_development",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "fd2a93e5-977e-4f72-ae52-3cc326cc33d3": {
+          "id": "fd2a93e5-977e-4f72-ae52-3cc326cc33d3",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_fd2a93e5",
+          "outgoing": [
+            "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+            "300f8abf-7ddc-4722-b38a-cd72f638a42b"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2632084,
+          "metadata": {}
+        },
+        "349d62af-985d-4d3b-8667-bb351557e15f": {
+          "id": "349d62af-985d-4d3b-8667-bb351557e15f",
+          "type": "CapabilityNode",
+          "name": "user_experience",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2632296,
+          "metadata": {
+            "name": "user_experience",
+            "description": "Capability: user_experience",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "a7adcf2e-e5c8-4555-b98d-56d962b670b5": {
+          "id": "a7adcf2e-e5c8-4555-b98d-56d962b670b5",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_a7adcf2e",
+          "outgoing": [
+            "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+            "349d62af-985d-4d3b-8667-bb351557e15f"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.26325,
+          "metadata": {}
+        },
+        "58769fb6-ebc0-4122-a7ee-fbbeecd903d9": {
+          "id": "58769fb6-ebc0-4122-a7ee-fbbeecd903d9",
+          "type": "CapabilityNode",
+          "name": "frontend_frameworks",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2632604,
+          "metadata": {
+            "name": "frontend_frameworks",
+            "description": "Capability: frontend_frameworks",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "447bd2df-434b-4d0d-bfae-4594ef739472": {
+          "id": "447bd2df-434b-4d0d-bfae-4594ef739472",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_447bd2df",
+          "outgoing": [
+            "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+            "58769fb6-ebc0-4122-a7ee-fbbeecd903d9"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.26328,
+          "metadata": {}
+        },
+        "11ce38c4-c2fb-43b8-af60-d039d4e8c037": {
+          "id": "11ce38c4-c2fb-43b8-af60-d039d4e8c037",
+          "type": "GoalNode",
+          "name": "create_intuitive_interfaces",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.1,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.26329,
+          "metadata": {}
+        },
+        "9c6f7157-5616-41b1-a700-fcc87d74c628": {
+          "id": "9c6f7157-5616-41b1-a700-fcc87d74c628",
+          "type": "GoalNode",
+          "name": "optimize_user_experience",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.1,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2633014,
+          "metadata": {}
+        },
+        "114d1d75-b55b-4211-b582-67ab7a5d707b": {
+          "id": "114d1d75-b55b-4211-b582-67ab7a5d707b",
+          "type": "GoalNode",
+          "name": "implement_responsive_design",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.1,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2633111,
+          "metadata": {}
+        },
+        "4c2ef845-d6ae-4939-bbbb-e4b82d0d9e35": {
+          "id": "4c2ef845-d6ae-4939-bbbb-e4b82d0d9e35",
+          "type": "BeliefNode",
+          "name": "role",
+          "value": "frontend_developer",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2633233,
+          "metadata": {}
+        },
+        "b4f17a9a-34b0-455b-9680-22f26ef6e2ec": {
+          "id": "b4f17a9a-34b0-455b-9680-22f26ef6e2ec",
+          "type": "BeliefNode",
+          "name": "specializations",
+          "value": [
+            "react",
+            "vue",
+            "css",
+            "ux_design"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2633374,
+          "metadata": {}
+        },
+        "92621f0e-b098-433b-b715-e3e882ff4adc": {
+          "id": "92621f0e-b098-433b-b715-e3e882ff4adc",
+          "type": "BeliefNode",
+          "name": "responsive_design",
+          "value": true,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2633486,
+          "metadata": {}
+        },
+        "5402406b-142b-4ea6-bcd3-b6ff430de2a9": {
+          "id": "5402406b-142b-4ea6-bcd3-b6ff430de2a9",
+          "type": "BeliefNode",
+          "name": "accessibility_focus",
+          "value": true,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2633574,
+          "metadata": {}
+        },
+        "c0987ff3-8f06-45e6-ae66-f1914e81f730": {
+          "id": "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+          "type": "AgentNode",
+          "name": "Maria_QA",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2634335,
+          "metadata": {}
+        },
+        "62a19f98-f4d4-42bc-ae9f-29bb1d8002ff": {
+          "id": "62a19f98-f4d4-42bc-ae9f-29bb1d8002ff",
+          "type": "CapabilityNode",
+          "name": "test_automation",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2634666,
+          "metadata": {
+            "name": "test_automation",
+            "description": "Capability: test_automation",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "79f6861d-5f07-4b38-bf8f-7da8046913c7": {
+          "id": "79f6861d-5f07-4b38-bf8f-7da8046913c7",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_79f6861d",
+          "outgoing": [
+            "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+            "62a19f98-f4d4-42bc-ae9f-29bb1d8002ff"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.263497,
+          "metadata": {}
+        },
+        "ad7dc86d-d7a8-469d-8144-6b039019a907": {
+          "id": "ad7dc86d-d7a8-469d-8144-6b039019a907",
+          "type": "CapabilityNode",
+          "name": "quality_assurance",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2635238,
+          "metadata": {
+            "name": "quality_assurance",
+            "description": "Capability: quality_assurance",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "1a2ab239-9e27-4fe3-9990-ebb7fa6a3297": {
+          "id": "1a2ab239-9e27-4fe3-9990-ebb7fa6a3297",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_1a2ab239",
+          "outgoing": [
+            "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+            "ad7dc86d-d7a8-469d-8144-6b039019a907"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2635384,
+          "metadata": {}
+        },
+        "b5eed1a0-2ab2-4599-b63f-18167e25e673": {
+          "id": "b5eed1a0-2ab2-4599-b63f-18167e25e673",
+          "type": "CapabilityNode",
+          "name": "bug_detection",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2635493,
+          "metadata": {
+            "name": "bug_detection",
+            "description": "Capability: bug_detection",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "a346cc6b-029f-4d0b-8b44-094ddf1b7305": {
+          "id": "a346cc6b-029f-4d0b-8b44-094ddf1b7305",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_a346cc6b",
+          "outgoing": [
+            "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+            "b5eed1a0-2ab2-4599-b63f-18167e25e673"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2635658,
+          "metadata": {}
+        },
+        "4bb5bea8-e3aa-4df6-a726-b0acb059db79": {
+          "id": "4bb5bea8-e3aa-4df6-a726-b0acb059db79",
+          "type": "GoalNode",
+          "name": "ensure_software_quality",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.1,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2635753,
+          "metadata": {}
+        },
+        "a2010323-216c-4a68-980a-e08fb0ca51de": {
+          "id": "a2010323-216c-4a68-980a-e08fb0ca51de",
+          "type": "GoalNode",
+          "name": "automate_testing",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.1,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2635863,
+          "metadata": {}
+        },
+        "e3f20ef1-0f2d-4694-9712-e8b505ffe937": {
+          "id": "e3f20ef1-0f2d-4694-9712-e8b505ffe937",
+          "type": "GoalNode",
+          "name": "prevent_regressions",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.1,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2635977,
+          "metadata": {}
+        },
+        "3cc17cc6-1a50-4589-9783-e1194a13bb55": {
+          "id": "3cc17cc6-1a50-4589-9783-e1194a13bb55",
+          "type": "BeliefNode",
+          "name": "role",
+          "value": "qa_engineer",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2636082,
+          "metadata": {}
+        },
+        "05fe15d2-188d-4c05-ba5f-4ccfb04a1888": {
+          "id": "05fe15d2-188d-4c05-ba5f-4ccfb04a1888",
+          "type": "BeliefNode",
+          "name": "testing_types",
+          "value": [
+            "unit",
+            "integration",
+            "e2e",
+            "performance"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2636175,
+          "metadata": {}
+        },
+        "cc1bb7f0-a79a-41dc-ba50-d4a3ce5adbf5": {
+          "id": "cc1bb7f0-a79a-41dc-ba50-d4a3ce5adbf5",
+          "type": "BeliefNode",
+          "name": "automation_tools",
+          "value": [
+            "pytest",
+            "selenium",
+            "jest"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2636266,
+          "metadata": {}
+        },
+        "02327134-13c1-4b2a-adaf-b8ad6f9c97fb": {
+          "id": "02327134-13c1-4b2a-adaf-b8ad6f9c97fb",
+          "type": "BeliefNode",
+          "name": "quality_standards",
+          "value": "zero_defects",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2636347,
+          "metadata": {}
+        },
+        "7d958d6c-5654-4d73-bcff-503dacd20764": {
+          "id": "7d958d6c-5654-4d73-bcff-503dacd20764",
+          "type": "AgentNode",
+          "name": "Chris_DevOps",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2637303,
+          "metadata": {}
+        },
+        "1bd17a11-84b6-4599-b862-38fbc3f6ae54": {
+          "id": "1bd17a11-84b6-4599-b862-38fbc3f6ae54",
+          "type": "CapabilityNode",
+          "name": "infrastructure_automation",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2637756,
+          "metadata": {
+            "name": "infrastructure_automation",
+            "description": "Capability: infrastructure_automation",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "e302e468-ee36-47c8-87d6-c89d1d77f293": {
+          "id": "e302e468-ee36-47c8-87d6-c89d1d77f293",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_e302e468",
+          "outgoing": [
+            "7d958d6c-5654-4d73-bcff-503dacd20764",
+            "1bd17a11-84b6-4599-b862-38fbc3f6ae54"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2638106,
+          "metadata": {}
+        },
+        "2f2dd782-c476-4904-8c3f-e4342a227d4f": {
+          "id": "2f2dd782-c476-4904-8c3f-e4342a227d4f",
+          "type": "CapabilityNode",
+          "name": "ci_cd",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2638235,
+          "metadata": {
+            "name": "ci_cd",
+            "description": "Capability: ci_cd",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "edd897f5-d921-49f3-9931-c18b1ca8874d": {
+          "id": "edd897f5-d921-49f3-9931-c18b1ca8874d",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_edd897f5",
+          "outgoing": [
+            "7d958d6c-5654-4d73-bcff-503dacd20764",
+            "2f2dd782-c476-4904-8c3f-e4342a227d4f"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.263838,
+          "metadata": {}
+        },
+        "e7634516-6fb8-4ec1-8aa1-f9eaba8ab6e4": {
+          "id": "e7634516-6fb8-4ec1-8aa1-f9eaba8ab6e4",
+          "type": "CapabilityNode",
+          "name": "monitoring",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2638474,
+          "metadata": {
+            "name": "monitoring",
+            "description": "Capability: monitoring",
+            "strength": 0.5,
+            "experience": 0
+          }
+        },
+        "0a40a350-fb66-4638-8702-2a38287cc30a": {
+          "id": "0a40a350-fb66-4638-8702-2a38287cc30a",
+          "type": "KnowledgeLink",
+          "name": "KnowledgeLink_0a40a350",
+          "outgoing": [
+            "7d958d6c-5654-4d73-bcff-503dacd20764",
+            "e7634516-6fb8-4ec1-8aa1-f9eaba8ab6e4"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2638643,
+          "metadata": {}
+        },
+        "ead962ce-1003-4441-93bb-ad4335c08965": {
+          "id": "ead962ce-1003-4441-93bb-ad4335c08965",
+          "type": "GoalNode",
+          "name": "automate_deployments",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.1,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.263873,
+          "metadata": {}
+        },
+        "602be69a-143b-44c4-86c8-673db20d4928": {
+          "id": "602be69a-143b-44c4-86c8-673db20d4928",
+          "type": "GoalNode",
+          "name": "ensure_reliability",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.1,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2638836,
+          "metadata": {}
+        },
+        "4610d20a-c272-46b4-925d-398dc13f860e": {
+          "id": "4610d20a-c272-46b4-925d-398dc13f860e",
+          "type": "GoalNode",
+          "name": "optimize_infrastructure",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.1,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2638924,
+          "metadata": {}
+        },
+        "ed8a8326-955e-4e02-b554-06269f344638": {
+          "id": "ed8a8326-955e-4e02-b554-06269f344638",
+          "type": "BeliefNode",
+          "name": "role",
+          "value": "devops_engineer",
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2639024,
+          "metadata": {}
+        },
+        "3d496314-5fb5-43bc-a6bd-be71480dd9b0": {
+          "id": "3d496314-5fb5-43bc-a6bd-be71480dd9b0",
+          "type": "BeliefNode",
+          "name": "cloud_platforms",
+          "value": [
+            "aws",
+            "gcp",
+            "azure"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2639117,
+          "metadata": {}
+        },
+        "d68a09cf-376c-4e94-a1c8-6390553b6b1f": {
+          "id": "d68a09cf-376c-4e94-a1c8-6390553b6b1f",
+          "type": "BeliefNode",
+          "name": "tools",
+          "value": [
+            "docker",
+            "kubernetes",
+            "terraform",
+            "jenkins"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2639203,
+          "metadata": {}
+        },
+        "b0974f20-59b6-450c-bfa2-583d8c90fb29": {
+          "id": "b0974f20-59b6-450c-bfa2-583d8c90fb29",
+          "type": "BeliefNode",
+          "name": "monitoring_focus",
+          "value": true,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2639291,
+          "metadata": {}
+        },
+        "fb4d3523-3a4a-4d75-990c-6036b42a55fe": {
+          "id": "fb4d3523-3a4a-4d75-990c-6036b42a55fe",
+          "type": "TrustLink",
+          "name": "TrustLink_fb4d3523",
+          "outgoing": [
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+            "f9bd62f6-c728-4112-a142-8a632d277c54"
+          ],
+          "truth_value": {
+            "strength": 0.88,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2640886,
+          "metadata": {}
+        },
+        "e5d28804-9400-4c80-81cd-94ffb5da52c6": {
+          "id": "e5d28804-9400-4c80-81cd-94ffb5da52c6",
+          "type": "MemoryNode",
+          "name": "trust_establishment_1",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2641065,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Alex_Architect",
+              "trust_level": 0.88,
+              "timestamp": 1761081452.2640944,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081452.2640958
+          }
+        },
+        "896df887-61f4-4c07-92f7-cf17d170a49d": {
+          "id": "896df887-61f4-4c07-92f7-cf17d170a49d",
+          "type": "TrustLink",
+          "name": "TrustLink_896df887",
+          "outgoing": [
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+            "9740e320-2d48-40fa-a3a0-46d49ccddefd"
+          ],
+          "truth_value": {
+            "strength": 0.8,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2641654,
+          "metadata": {}
+        },
+        "fb7ab999-2282-4968-a646-4c61023e7d4b": {
+          "id": "fb7ab999-2282-4968-a646-4c61023e7d4b",
+          "type": "MemoryNode",
+          "name": "trust_establishment_2",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.264179,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Jake_Frontend",
+              "trust_level": 0.8,
+              "timestamp": 1761081452.2641695,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081452.2641702
+          }
+        },
+        "f2a50617-1ba7-424d-a801-98259f0fca63": {
+          "id": "f2a50617-1ba7-424d-a801-98259f0fca63",
+          "type": "TrustLink",
+          "name": "TrustLink_f2a50617",
+          "outgoing": [
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+            "c0987ff3-8f06-45e6-ae66-f1914e81f730"
+          ],
+          "truth_value": {
+            "strength": 0.85,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.264218,
+          "metadata": {}
+        },
+        "7342862c-0e47-4b6c-b7c0-1c1f222923c8": {
+          "id": "7342862c-0e47-4b6c-b7c0-1c1f222923c8",
+          "type": "MemoryNode",
+          "name": "trust_establishment_3",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.264229,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Maria_QA",
+              "trust_level": 0.85,
+              "timestamp": 1761081452.2642212,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081452.264222
+          }
+        },
+        "adabbf65-0c4b-4f0a-b6a8-9573091d389d": {
+          "id": "adabbf65-0c4b-4f0a-b6a8-9573091d389d",
+          "type": "TrustLink",
+          "name": "TrustLink_adabbf65",
+          "outgoing": [
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+            "7d958d6c-5654-4d73-bcff-503dacd20764"
+          ],
+          "truth_value": {
+            "strength": 0.8,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2642686,
+          "metadata": {}
+        },
+        "0dba0aea-755b-4898-94d1-84b96aceacbd": {
+          "id": "0dba0aea-755b-4898-94d1-84b96aceacbd",
+          "type": "MemoryNode",
+          "name": "trust_establishment_4",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2642794,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Chris_DevOps",
+              "trust_level": 0.8,
+              "timestamp": 1761081452.2642715,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081452.2642722
+          }
+        },
+        "6d5cb46b-e623-42fb-a49e-6e1c60cfd192": {
+          "id": "6d5cb46b-e623-42fb-a49e-6e1c60cfd192",
+          "type": "TrustLink",
+          "name": "TrustLink_6d5cb46b",
+          "outgoing": [
+            "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537"
+          ],
+          "truth_value": {
+            "strength": 0.82,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2643096,
+          "metadata": {}
+        },
+        "ae0081db-6640-4b99-8979-02827bb3df6c": {
+          "id": "ae0081db-6640-4b99-8979-02827bb3df6c",
+          "type": "MemoryNode",
+          "name": "trust_establishment_1",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2643738,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Sarah_Senior",
+              "trust_level": 0.82,
+              "timestamp": 1761081452.2643642,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081452.264365
+          }
+        },
+        "06a870ed-bac9-498b-8742-d3deb8d9c696": {
+          "id": "06a870ed-bac9-498b-8742-d3deb8d9c696",
+          "type": "TrustLink",
+          "name": "TrustLink_06a870ed",
+          "outgoing": [
+            "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+            "c0987ff3-8f06-45e6-ae66-f1914e81f730"
+          ],
+          "truth_value": {
+            "strength": 0.8,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2644053,
+          "metadata": {}
+        },
+        "87a0a932-989c-4188-8adf-3be6f7eeb567": {
+          "id": "87a0a932-989c-4188-8adf-3be6f7eeb567",
+          "type": "MemoryNode",
+          "name": "trust_establishment_2",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2644157,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Maria_QA",
+              "trust_level": 0.8,
+              "timestamp": 1761081452.2644083,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081452.2644088
+          }
+        },
+        "508a5dd2-6b7a-4c0d-b523-8267bddd33b7": {
+          "id": "508a5dd2-6b7a-4c0d-b523-8267bddd33b7",
+          "type": "TrustLink",
+          "name": "TrustLink_508a5dd2",
+          "outgoing": [
+            "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537"
+          ],
+          "truth_value": {
+            "strength": 0.9,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2644541,
+          "metadata": {}
+        },
+        "ff92f17c-07d9-4211-af72-cf4ee6760b8c": {
+          "id": "ff92f17c-07d9-4211-af72-cf4ee6760b8c",
+          "type": "MemoryNode",
+          "name": "trust_establishment_1",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.264464,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Sarah_Senior",
+              "trust_level": 0.9,
+              "timestamp": 1761081452.2644567,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081452.2644572
+          }
+        },
+        "4c0c7487-04f4-47e6-82a4-488bbf71edb8": {
+          "id": "4c0c7487-04f4-47e6-82a4-488bbf71edb8",
+          "type": "TrustLink",
+          "name": "TrustLink_4c0c7487",
+          "outgoing": [
+            "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+            "7d958d6c-5654-4d73-bcff-503dacd20764"
+          ],
+          "truth_value": {
+            "strength": 0.85,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.26449,
+          "metadata": {}
+        },
+        "d0ddfa91-7a2a-40b1-909c-5a1e31b8d52a": {
+          "id": "d0ddfa91-7a2a-40b1-909c-5a1e31b8d52a",
+          "type": "MemoryNode",
+          "name": "trust_establishment_2",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2645,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Chris_DevOps",
+              "trust_level": 0.85,
+              "timestamp": 1761081452.2644928,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081452.264493
+          }
+        },
+        "6e167e0b-e6d8-4212-86fb-eca3162c1a64": {
+          "id": "6e167e0b-e6d8-4212-86fb-eca3162c1a64",
+          "type": "TrustLink",
+          "name": "TrustLink_6e167e0b",
+          "outgoing": [
+            "7d958d6c-5654-4d73-bcff-503dacd20764",
+            "f9bd62f6-c728-4112-a142-8a632d277c54"
+          ],
+          "truth_value": {
+            "strength": 0.87,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2645295,
+          "metadata": {}
+        },
+        "a16036c8-3f49-41b3-944d-f1e8d251a578": {
+          "id": "a16036c8-3f49-41b3-944d-f1e8d251a578",
+          "type": "MemoryNode",
+          "name": "trust_establishment_1",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.26454,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Alex_Architect",
+              "trust_level": 0.87,
+              "timestamp": 1761081452.2645323,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081452.2645328
+          }
+        },
+        "568fa6bf-60e3-40f7-b653-8e99a2441330": {
+          "id": "568fa6bf-60e3-40f7-b653-8e99a2441330",
+          "type": "TrustLink",
+          "name": "TrustLink_568fa6bf",
+          "outgoing": [
+            "7d958d6c-5654-4d73-bcff-503dacd20764",
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537"
+          ],
+          "truth_value": {
+            "strength": 0.85,
+            "confidence": 0.8
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.264566,
+          "metadata": {}
+        },
+        "92596ef0-5d86-4908-88a7-5047225d1262": {
+          "id": "92596ef0-5d86-4908-88a7-5047225d1262",
+          "type": "MemoryNode",
+          "name": "trust_establishment_2",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2645755,
+          "metadata": {
+            "type": "trust_establishment",
+            "content": {
+              "action": "establish_trust",
+              "target_agent": "Sarah_Senior",
+              "trust_level": 0.85,
+              "timestamp": 1761081452.2645683,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081452.2645688
+          }
+        },
+        "74c93bbc-e5c8-4b7a-a054-6f220c1855b2": {
+          "id": "74c93bbc-e5c8-4b7a-a054-6f220c1855b2",
+          "type": "KnowledgeLink",
+          "name": "development_practices_1761081452",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2647028,
+          "metadata": {
+            "type": "development_practices",
+            "content": {
+              "coding_standards": [
+                "pep8",
+                "clean_code",
+                "solid_principles"
+              ],
+              "testing_approach": [
+                "tdd",
+                "bdd",
+                "continuous_testing"
+              ],
+              "code_review_process": [
+                "peer_review",
+                "automated_checks",
+                "security_scan"
+              ]
+            },
+            "source": "Sarah_Senior",
+            "timestamp": 1761081452.2646828
+          }
+        },
+        "8a523aa6-5a41-41fc-9fde-1bd4734b01a0": {
+          "id": "8a523aa6-5a41-41fc-9fde-1bd4734b01a0",
+          "type": "MemoryNode",
+          "name": "knowledge_sharing_5",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2647188,
+          "metadata": {
+            "type": "knowledge_sharing",
+            "content": {
+              "action": "share_knowledge",
+              "knowledge_type": "development_practices",
+              "target": "all_agents",
+              "shared_at": 1761081452.264708,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081452.2647092
+          }
+        },
+        "81e87873-8ec7-4aca-97ae-1fff5f061efe": {
+          "id": "81e87873-8ec7-4aca-97ae-1fff5f061efe",
+          "type": "KnowledgeLink",
+          "name": "quality_processes_1761081452",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.264748,
+          "metadata": {
+            "type": "quality_processes",
+            "content": {
+              "testing_pyramid": [
+                "unit_70",
+                "integration_20",
+                "e2e_10"
+              ],
+              "automation_strategy": [
+                "api_first",
+                "shift_left",
+                "continuous_testing"
+              ],
+              "quality_gates": [
+                "coverage_80",
+                "performance_sla",
+                "security_scan"
+              ]
+            },
+            "source": "Maria_QA",
+            "timestamp": 1761081452.2647393
+          }
+        },
+        "4aef8259-0771-4433-ae0b-fd0d2300ab20": {
+          "id": "4aef8259-0771-4433-ae0b-fd0d2300ab20",
+          "type": "MemoryNode",
+          "name": "knowledge_sharing_3",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2647586,
+          "metadata": {
+            "type": "knowledge_sharing",
+            "content": {
+              "action": "share_knowledge",
+              "knowledge_type": "quality_processes",
+              "target": "all_agents",
+              "shared_at": 1761081452.2647505,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081452.2647512
+          }
+        },
+        "db045d1e-0319-4c85-a327-1b477c1cf7e6": {
+          "id": "db045d1e-0319-4c85-a327-1b477c1cf7e6",
+          "type": "GoalNode",
+          "name": "contribute_to_task: Build Cloud-Native AI Platform",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2648458,
+          "metadata": {}
+        },
+        "7455b1fa-e088-43fb-8fea-90fbf31c2328": {
+          "id": "7455b1fa-e088-43fb-8fea-90fbf31c2328",
+          "type": "GoalNode",
+          "name": "contribute_to_task: Build Cloud-Native AI Platform",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.264867,
+          "metadata": {}
+        },
+        "8d629776-d94e-44de-95de-c9e9ae77f9fa": {
+          "id": "8d629776-d94e-44de-95de-c9e9ae77f9fa",
+          "type": "GoalNode",
+          "name": "contribute_to_task: Build Cloud-Native AI Platform",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.5,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2648802,
+          "metadata": {}
+        },
+        "ca50fbcd-cad3-46ab-8140-6589ae39e43d": {
+          "id": "ca50fbcd-cad3-46ab-8140-6589ae39e43d",
+          "type": "GoalNode",
+          "name": "contribute_to_task: Build Cloud-Native AI Platform",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.5,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2648904,
+          "metadata": {}
+        },
+        "40ed555b-a676-4fea-9687-8ce816384797": {
+          "id": "40ed555b-a676-4fea-9687-8ce816384797",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_40ed555b",
+          "outgoing": [
+            "f9bd62f6-c728-4112-a142-8a632d277c54",
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.26494,
+          "metadata": {
+            "collaboration_type": "Build Cloud-Native AI Platform"
+          }
+        },
+        "ca508213-bf56-469a-80de-d4cfc5bf0248": {
+          "id": "ca508213-bf56-469a-80de-d4cfc5bf0248",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_ca508213",
+          "outgoing": [
+            "f9bd62f6-c728-4112-a142-8a632d277c54",
+            "9740e320-2d48-40fa-a3a0-46d49ccddefd"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2649531,
+          "metadata": {
+            "collaboration_type": "Build Cloud-Native AI Platform"
+          }
+        },
+        "d57c74ec-64d2-47b6-b6d3-111690d0ca59": {
+          "id": "d57c74ec-64d2-47b6-b6d3-111690d0ca59",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_d57c74ec",
+          "outgoing": [
+            "f9bd62f6-c728-4112-a142-8a632d277c54",
+            "c0987ff3-8f06-45e6-ae66-f1914e81f730"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2649627,
+          "metadata": {
+            "collaboration_type": "Build Cloud-Native AI Platform"
+          }
+        },
+        "1205e33d-c4f1-4d7c-b7b9-0f5eb95a8ecf": {
+          "id": "1205e33d-c4f1-4d7c-b7b9-0f5eb95a8ecf",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_1205e33d",
+          "outgoing": [
+            "f9bd62f6-c728-4112-a142-8a632d277c54",
+            "7d958d6c-5654-4d73-bcff-503dacd20764"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.264971,
+          "metadata": {
+            "collaboration_type": "Build Cloud-Native AI Platform"
+          }
+        },
+        "b44c9896-7e84-4799-adac-cd1a0df67ce8": {
+          "id": "b44c9896-7e84-4799-adac-cd1a0df67ce8",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_b44c9896",
+          "outgoing": [
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+            "9740e320-2d48-40fa-a3a0-46d49ccddefd"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.264982,
+          "metadata": {
+            "collaboration_type": "Build Cloud-Native AI Platform"
+          }
+        },
+        "e4c208a6-d38b-47b3-9f47-7b59482a97e7": {
+          "id": "e4c208a6-d38b-47b3-9f47-7b59482a97e7",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_e4c208a6",
+          "outgoing": [
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+            "c0987ff3-8f06-45e6-ae66-f1914e81f730"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.26499,
+          "metadata": {
+            "collaboration_type": "Build Cloud-Native AI Platform"
+          }
+        },
+        "7084b442-6fb9-4414-94e2-440dcc8f4c8b": {
+          "id": "7084b442-6fb9-4414-94e2-440dcc8f4c8b",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_7084b442",
+          "outgoing": [
+            "c315972c-cf86-4b0b-a1f7-d435b5fc7537",
+            "7d958d6c-5654-4d73-bcff-503dacd20764"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2649984,
+          "metadata": {
+            "collaboration_type": "Build Cloud-Native AI Platform"
+          }
+        },
+        "b05dfed2-0afc-4899-8d05-a00a8de5088a": {
+          "id": "b05dfed2-0afc-4899-8d05-a00a8de5088a",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_b05dfed2",
+          "outgoing": [
+            "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+            "c0987ff3-8f06-45e6-ae66-f1914e81f730"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.2650063,
+          "metadata": {
+            "collaboration_type": "Build Cloud-Native AI Platform"
+          }
+        },
+        "6d8e1c0e-091c-4329-adec-9320fcf594c9": {
+          "id": "6d8e1c0e-091c-4329-adec-9320fcf594c9",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_6d8e1c0e",
+          "outgoing": [
+            "9740e320-2d48-40fa-a3a0-46d49ccddefd",
+            "7d958d6c-5654-4d73-bcff-503dacd20764"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.265014,
+          "metadata": {
+            "collaboration_type": "Build Cloud-Native AI Platform"
+          }
+        },
+        "db0bc1d2-83e9-4beb-bbb5-5ba85f413e04": {
+          "id": "db0bc1d2-83e9-4beb-bbb5-5ba85f413e04",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_db0bc1d2",
+          "outgoing": [
+            "c0987ff3-8f06-45e6-ae66-f1914e81f730",
+            "7d958d6c-5654-4d73-bcff-503dacd20764"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081452.265024,
+          "metadata": {
+            "collaboration_type": "Build Cloud-Native AI Platform"
+          }
+        },
+        "2d22f391-7f34-4a66-8e0a-9125671dbc24": {
+          "id": "2d22f391-7f34-4a66-8e0a-9125671dbc24",
+          "type": "CollaborationLink",
+          "name": "CollaborationLink_2d22f391",
+          "outgoing": [
+            "7d958d6c-5654-4d73-bcff-503dacd20764",
+            "f9bd62f6-c728-4112-a142-8a632d277c54"
+          ],
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.0,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081460.2811484,
+          "metadata": {
+            "collaboration_type": "infrastructure_design"
+          }
+        },
+        "17823e16-a76c-425d-98c8-3c1599bfe4d2": {
+          "id": "17823e16-a76c-425d-98c8-3c1599bfe4d2",
+          "type": "MemoryNode",
+          "name": "coordination_3",
+          "value": null,
+          "truth_value": {
+            "strength": 0.5,
+            "confidence": 0.0
+          },
+          "attention_value": {
+            "sti": 0.0,
+            "lti": 0.5,
+            "vlti": 0.0
+          },
+          "timestamp": 1761081460.2811716,
+          "metadata": {
+            "type": "coordination",
+            "content": {
+              "action": "coordinate_with_agent",
+              "partner": "Alex_Architect",
+              "coordination_type": "infrastructure_design",
+              "timestamp": 1761081460.281156,
+              "status": "success"
+            },
+            "importance": 0.5,
+            "timestamp": 1761081460.281158
+          }
+        }
+      },
+      "statistics": {
+        "total_atoms": 97,
+        "atom_types": {
+          "AgentNode": 5,
+          "CapabilityNode": 12,
+          "KnowledgeLink": 14,
+          "GoalNode": 16,
+          "BeliefNode": 16,
+          "TrustLink": 10,
+          "MemoryNode": 13,
+          "CollaborationLink": 11
+        },
+        "timestamp": 1761081460.281552
+      }
+    },
+    "agent_states": {
+      "Alex_Architect": {
+        "agent_id": "Alex_Architect",
+        "current_phase": "attention",
+        "goals": [
+          "design_robust_architecture",
+          "ensure_scalability",
+          "guide_technical_decisions",
+          "contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "beliefs": {
+          "role": "software_architect",
+          "experience_level": "senior",
+          "design_philosophy": "clean_architecture",
+          "preferred_patterns": [
+            "microservices",
+            "event_driven",
+            "hexagonal"
+          ],
+          "visible_agents": [
+            "Sarah_Senior",
+            "Maria_QA",
+            "Jake_Frontend",
+            "Chris_DevOps"
+          ],
+          "recent_changes": 95,
+          "potential_collaborators": [
+            "Sarah_Senior",
+            "Chris_DevOps",
+            "Maria_QA",
+            "Jake_Frontend"
+          ],
+          "trust_levels": {}
+        },
+        "intentions": [
+          "execute_contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "working_memory": {
+          "last_perception": 1761081459.2780902,
+          "last_reasoning": 1761081454.2699568,
+          "last_planning": 1761081455.271948,
+          "executed_execute_design_robust_architecture": 1761081456.2731884,
+          "executed_execute_ensure_scalability": 1761081456.273192,
+          "executed_execute_guide_technical_decisions": 1761081456.273193,
+          "last_execution": 1761081456.2731957,
+          "last_learning": 1761081457.2749672,
+          "last_reflection": 1761081458.276257
+        },
+        "attention_focus": [
+          "e5d28804-9400-4c80-81cd-94ffb5da52c6",
+          "fb7ab999-2282-4968-a646-4c61023e7d4b",
+          "7342862c-0e47-4b6c-b7c0-1c1f222923c8",
+          "0dba0aea-755b-4898-94d1-84b96aceacbd",
+          "ae0081db-6640-4b99-8979-02827bb3df6c",
+          "ca50fbcd-cad3-46ab-8140-6589ae39e43d",
+          "8d629776-d94e-44de-95de-c9e9ae77f9fa"
+        ],
+        "activation_level": 1.0,
+        "timestamp": 1761081452.262517
+      },
+      "Sarah_Senior": {
+        "agent_id": "Sarah_Senior",
+        "current_phase": "attention",
+        "goals": [
+          "implement_core_features",
+          "maintain_code_quality",
+          "mentor_junior_devs",
+          "contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "beliefs": {
+          "role": "senior_developer",
+          "languages": [
+            "python",
+            "javascript",
+            "go"
+          ],
+          "frameworks": [
+            "fastapi",
+            "react",
+            "kubernetes"
+          ],
+          "code_quality_standards": "high",
+          "visible_agents": [
+            "Alex_Architect",
+            "Maria_QA",
+            "Jake_Frontend",
+            "Chris_DevOps"
+          ],
+          "recent_changes": 95,
+          "potential_collaborators": [
+            "Alex_Architect",
+            "Jake_Frontend",
+            "Maria_QA",
+            "Chris_DevOps"
+          ],
+          "trust_levels": {
+            "Alex_Architect": 0.88,
+            "Jake_Frontend": 0.8,
+            "Maria_QA": 0.85,
+            "Chris_DevOps": 0.8
+          }
+        },
+        "intentions": [
+          "execute_contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "working_memory": {
+          "last_perception": 1761081459.278152,
+          "last_reasoning": 1761081454.2700315,
+          "last_planning": 1761081455.2719684,
+          "executed_execute_implement_core_features": 1761081456.2732162,
+          "executed_execute_maintain_code_quality": 1761081456.2732172,
+          "executed_execute_mentor_junior_devs": 1761081456.2732182,
+          "last_execution": 1761081456.2732198,
+          "last_learning": 1761081457.2749946,
+          "last_reflection": 1761081458.2762923
+        },
+        "attention_focus": [
+          "e5d28804-9400-4c80-81cd-94ffb5da52c6",
+          "fb7ab999-2282-4968-a646-4c61023e7d4b",
+          "7342862c-0e47-4b6c-b7c0-1c1f222923c8",
+          "0dba0aea-755b-4898-94d1-84b96aceacbd",
+          "ae0081db-6640-4b99-8979-02827bb3df6c",
+          "de231b6f-18a7-46c2-a756-aadc80d63ebb",
+          "749092eb-f9e3-42cd-94a1-2af23170f4ce",
+          "386f9d72-ebbc-47bd-911e-3e8de782f141",
+          "ca50fbcd-cad3-46ab-8140-6589ae39e43d",
+          "8d629776-d94e-44de-95de-c9e9ae77f9fa"
+        ],
+        "activation_level": 1.0,
+        "timestamp": 1761081452.2628505
+      },
+      "Jake_Frontend": {
+        "agent_id": "Jake_Frontend",
+        "current_phase": "attention",
+        "goals": [
+          "create_intuitive_interfaces",
+          "optimize_user_experience",
+          "implement_responsive_design",
+          "contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "beliefs": {
+          "role": "frontend_developer",
+          "specializations": [
+            "react",
+            "vue",
+            "css",
+            "ux_design"
+          ],
+          "responsive_design": true,
+          "accessibility_focus": true,
+          "visible_agents": [
+            "Alex_Architect",
+            "Sarah_Senior",
+            "Maria_QA",
+            "Chris_DevOps"
+          ],
+          "recent_changes": 95,
+          "potential_collaborators": [
+            "Sarah_Senior",
+            "Maria_QA",
+            "Alex_Architect",
+            "Chris_DevOps"
+          ],
+          "trust_levels": {
+            "Sarah_Senior": 0.82,
+            "Maria_QA": 0.8
+          }
+        },
+        "intentions": [
+          "execute_contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "working_memory": {
+          "last_perception": 1761081459.2781966,
+          "last_reasoning": 1761081454.2700908,
+          "last_planning": 1761081455.2719848,
+          "executed_execute_create_intuitive_interfaces": 1761081456.2732315,
+          "executed_execute_optimize_user_experience": 1761081456.2732325,
+          "executed_execute_implement_responsive_design": 1761081456.2732332,
+          "last_execution": 1761081456.2732344,
+          "last_learning": 1761081457.2750113,
+          "last_reflection": 1761081458.2763133
+        },
+        "attention_focus": [
+          "e5d28804-9400-4c80-81cd-94ffb5da52c6",
+          "fb7ab999-2282-4968-a646-4c61023e7d4b",
+          "7342862c-0e47-4b6c-b7c0-1c1f222923c8",
+          "0dba0aea-755b-4898-94d1-84b96aceacbd",
+          "ae0081db-6640-4b99-8979-02827bb3df6c",
+          "11ce38c4-c2fb-43b8-af60-d039d4e8c037",
+          "9c6f7157-5616-41b1-a700-fcc87d74c628",
+          "114d1d75-b55b-4211-b582-67ab7a5d707b",
+          "ca50fbcd-cad3-46ab-8140-6589ae39e43d",
+          "8d629776-d94e-44de-95de-c9e9ae77f9fa"
+        ],
+        "activation_level": 1.0,
+        "timestamp": 1761081452.2631495
+      },
+      "Maria_QA": {
+        "agent_id": "Maria_QA",
+        "current_phase": "attention",
+        "goals": [
+          "ensure_software_quality",
+          "automate_testing",
+          "prevent_regressions",
+          "contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "beliefs": {
+          "role": "qa_engineer",
+          "testing_types": [
+            "unit",
+            "integration",
+            "e2e",
+            "performance"
+          ],
+          "automation_tools": [
+            "pytest",
+            "selenium",
+            "jest"
+          ],
+          "quality_standards": "zero_defects",
+          "visible_agents": [
+            "Alex_Architect",
+            "Sarah_Senior",
+            "Jake_Frontend",
+            "Chris_DevOps"
+          ],
+          "recent_changes": 95,
+          "potential_collaborators": [
+            "Jake_Frontend",
+            "Sarah_Senior",
+            "Alex_Architect",
+            "Chris_DevOps"
+          ],
+          "trust_levels": {
+            "Sarah_Senior": 0.9,
+            "Chris_DevOps": 0.85
+          }
+        },
+        "intentions": [
+          "execute_contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "working_memory": {
+          "last_perception": 1761081459.2782414,
+          "last_reasoning": 1761081454.270145,
+          "last_planning": 1761081455.271996,
+          "executed_execute_ensure_software_quality": 1761081456.2732441,
+          "executed_execute_automate_testing": 1761081456.2732449,
+          "executed_execute_prevent_regressions": 1761081456.2732453,
+          "last_execution": 1761081456.273247,
+          "last_learning": 1761081457.2750244,
+          "last_reflection": 1761081458.2763321
+        },
+        "attention_focus": [
+          "e5d28804-9400-4c80-81cd-94ffb5da52c6",
+          "fb7ab999-2282-4968-a646-4c61023e7d4b",
+          "7342862c-0e47-4b6c-b7c0-1c1f222923c8",
+          "0dba0aea-755b-4898-94d1-84b96aceacbd",
+          "ae0081db-6640-4b99-8979-02827bb3df6c",
+          "4bb5bea8-e3aa-4df6-a726-b0acb059db79",
+          "a2010323-216c-4a68-980a-e08fb0ca51de",
+          "e3f20ef1-0f2d-4694-9712-e8b505ffe937",
+          "ca50fbcd-cad3-46ab-8140-6589ae39e43d",
+          "8d629776-d94e-44de-95de-c9e9ae77f9fa"
+        ],
+        "activation_level": 1.0,
+        "timestamp": 1761081452.2634382
+      },
+      "Chris_DevOps": {
+        "agent_id": "Chris_DevOps",
+        "current_phase": "attention",
+        "goals": [
+          "automate_deployments",
+          "ensure_reliability",
+          "optimize_infrastructure",
+          "contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "beliefs": {
+          "role": "devops_engineer",
+          "cloud_platforms": [
+            "aws",
+            "gcp",
+            "azure"
+          ],
+          "tools": [
+            "docker",
+            "kubernetes",
+            "terraform",
+            "jenkins"
+          ],
+          "monitoring_focus": true,
+          "visible_agents": [
+            "Alex_Architect",
+            "Sarah_Senior",
+            "Maria_QA",
+            "Jake_Frontend"
+          ],
+          "recent_changes": 95,
+          "potential_collaborators": [
+            "Alex_Architect",
+            "Maria_QA",
+            "Sarah_Senior",
+            "Jake_Frontend"
+          ],
+          "trust_levels": {
+            "Alex_Architect": 0.87,
+            "Sarah_Senior": 0.85
+          }
+        },
+        "intentions": [
+          "execute_contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "working_memory": {
+          "last_perception": 1761081459.278274,
+          "last_reasoning": 1761081454.2701998,
+          "last_planning": 1761081455.2720068,
+          "executed_execute_automate_deployments": 1761081456.2732553,
+          "executed_execute_ensure_reliability": 1761081456.2732563,
+          "executed_execute_optimize_infrastructure": 1761081456.2732565,
+          "last_execution": 1761081456.2732577,
+          "last_learning": 1761081457.2750378,
+          "last_reflection": 1761081458.2763488
+        },
+        "attention_focus": [
+          "e5d28804-9400-4c80-81cd-94ffb5da52c6",
+          "fb7ab999-2282-4968-a646-4c61023e7d4b",
+          "7342862c-0e47-4b6c-b7c0-1c1f222923c8",
+          "0dba0aea-755b-4898-94d1-84b96aceacbd",
+          "ae0081db-6640-4b99-8979-02827bb3df6c",
+          "ead962ce-1003-4441-93bb-ad4335c08965",
+          "602be69a-143b-44c4-86c8-673db20d4928",
+          "4610d20a-c272-46b4-925d-398dc13f860e",
+          "ca50fbcd-cad3-46ab-8140-6589ae39e43d",
+          "8d629776-d94e-44de-95de-c9e9ae77f9fa"
+        ],
+        "activation_level": 1.0,
+        "timestamp": 1761081452.263739
+      }
+    }
+  },
+  "agents": {
+    "count": 5,
+    "names": [
+      "Alex_Architect",
+      "Sarah_Senior",
+      "Jake_Frontend",
+      "Maria_QA",
+      "Chris_DevOps"
+    ],
+    "active_cognitive_cycles": 0
+  },
+  "topology": {
+    "agents": {
+      "Alex_Architect": {
+        "capabilities": [
+          "system_design",
+          "architecture_patterns",
+          "scalability_planning"
+        ],
+        "goals": [
+          "design_robust_architecture",
+          "ensure_scalability",
+          "guide_technical_decisions",
+          "contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "beliefs_count": 4,
+        "memories_count": 1,
+        "cognitive_state": "attention"
+      },
+      "Sarah_Senior": {
+        "capabilities": [
+          "full_stack_development",
+          "code_optimization",
+          "mentoring"
+        ],
+        "goals": [
+          "implement_core_features",
+          "maintain_code_quality",
+          "mentor_junior_devs",
+          "contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "beliefs_count": 4,
+        "memories_count": 5,
+        "cognitive_state": "attention"
+      },
+      "Jake_Frontend": {
+        "capabilities": [
+          "ui_development",
+          "user_experience",
+          "frontend_frameworks"
+        ],
+        "goals": [
+          "create_intuitive_interfaces",
+          "optimize_user_experience",
+          "implement_responsive_design",
+          "contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "beliefs_count": 4,
+        "memories_count": 2,
+        "cognitive_state": "attention"
+      },
+      "Maria_QA": {
+        "capabilities": [
+          "test_automation",
+          "quality_assurance",
+          "bug_detection"
+        ],
+        "goals": [
+          "ensure_software_quality",
+          "automate_testing",
+          "prevent_regressions",
+          "contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "beliefs_count": 4,
+        "memories_count": 3,
+        "cognitive_state": "attention"
+      },
+      "Chris_DevOps": {
+        "capabilities": [
+          "infrastructure_automation",
+          "ci_cd",
+          "monitoring"
+        ],
+        "goals": [
+          "automate_deployments",
+          "ensure_reliability",
+          "optimize_infrastructure",
+          "contribute_to_task: Build Cloud-Native AI Platform"
+        ],
+        "beliefs_count": 4,
+        "memories_count": 3,
+        "cognitive_state": "attention"
+      }
+    },
+    "relationships": {
+      "collaborations": [
+        {
+          "agent1": "Alex_Architect",
+          "agent2": "Sarah_Senior",
+          "type": "Build Cloud-Native AI Platform"
+        },
+        {
+          "agent1": "Alex_Architect",
+          "agent2": "Jake_Frontend",
+          "type": "Build Cloud-Native AI Platform"
+        },
+        {
+          "agent1": "Alex_Architect",
+          "agent2": "Maria_QA",
+          "type": "Build Cloud-Native AI Platform"
+        },
+        {
+          "agent1": "Alex_Architect",
+          "agent2": "Chris_DevOps",
+          "type": "Build Cloud-Native AI Platform"
+        },
+        {
+          "agent1": "Sarah_Senior",
+          "agent2": "Jake_Frontend",
+          "type": "Build Cloud-Native AI Platform"
+        },
+        {
+          "agent1": "Sarah_Senior",
+          "agent2": "Maria_QA",
+          "type": "Build Cloud-Native AI Platform"
+        },
+        {
+          "agent1": "Sarah_Senior",
+          "agent2": "Chris_DevOps",
+          "type": "Build Cloud-Native AI Platform"
+        },
+        {
+          "agent1": "Jake_Frontend",
+          "agent2": "Maria_QA",
+          "type": "Build Cloud-Native AI Platform"
+        },
+        {
+          "agent1": "Jake_Frontend",
+          "agent2": "Chris_DevOps",
+          "type": "Build Cloud-Native AI Platform"
+        },
+        {
+          "agent1": "Maria_QA",
+          "agent2": "Chris_DevOps",
+          "type": "Build Cloud-Native AI Platform"
+        },
+        {
+          "agent1": "Chris_DevOps",
+          "agent2": "Alex_Architect",
+          "type": "infrastructure_design"
+        }
+      ],
+      "trust_relationships": [
+        {
+          "trustor": "Sarah_Senior",
+          "trustee": "Alex_Architect",
+          "trust_level": 0.88
+        },
+        {
+          "trustor": "Sarah_Senior",
+          "trustee": "Jake_Frontend",
+          "trust_level": 0.8
+        },
+        {
+          "trustor": "Sarah_Senior",
+          "trustee": "Maria_QA",
+          "trust_level": 0.85
+        },
+        {
+          "trustor": "Sarah_Senior",
+          "trustee": "Chris_DevOps",
+          "trust_level": 0.8
+        },
+        {
+          "trustor": "Jake_Frontend",
+          "trustee": "Sarah_Senior",
+          "trust_level": 0.82
+        },
+        {
+          "trustor": "Jake_Frontend",
+          "trustee": "Maria_QA",
+          "trust_level": 0.8
+        },
+        {
+          "trustor": "Maria_QA",
+          "trustee": "Sarah_Senior",
+          "trust_level": 0.9
+        },
+        {
+          "trustor": "Maria_QA",
+          "trustee": "Chris_DevOps",
+          "trust_level": 0.85
+        },
+        {
+          "trustor": "Chris_DevOps",
+          "trustee": "Alex_Architect",
+          "trust_level": 0.87
+        },
+        {
+          "trustor": "Chris_DevOps",
+          "trustee": "Sarah_Senior",
+          "trust_level": 0.85
+        }
+      ],
+      "knowledge_links": [
+        {
+          "source": "Sarah_Senior",
+          "target": "full_stack_development",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Sarah_Senior",
+          "target": "code_optimization",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Sarah_Senior",
+          "target": "mentoring",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Jake_Frontend",
+          "target": "ui_development",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Jake_Frontend",
+          "target": "user_experience",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Jake_Frontend",
+          "target": "frontend_frameworks",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Maria_QA",
+          "target": "test_automation",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Maria_QA",
+          "target": "quality_assurance",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Maria_QA",
+          "target": "bug_detection",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Chris_DevOps",
+          "target": "infrastructure_automation",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Chris_DevOps",
+          "target": "ci_cd",
+          "knowledge_type": "CapabilityNode"
+        },
+        {
+          "source": "Chris_DevOps",
+          "target": "monitoring",
+          "knowledge_type": "CapabilityNode"
+        }
+      ]
+    },
+    "statistics": {
+      "total_agents": 5,
+      "total_atoms": 97,
+      "active_collaborations": 11,
+      "average_trust_level": 0.842
+    }
+  }
+}
