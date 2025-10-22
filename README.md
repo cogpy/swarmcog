@@ -181,6 +181,7 @@ The Assistants API is a great option for developers looking for fully-hosted thr
 ## 🧠 SwarmCog Examples
 
 - [`cognitive_research_team`](examples/cognitive_research_team.py): **Autonomous Multi-Agent Research Team** - Demonstrates cognitive agents collaborating on research projects with trust building, knowledge sharing, and autonomous coordination
+- [`cognitive_cycle_demo`](examples/cognitive_cycle_demo.py): **Cognitive Cycle Demonstration** - Interactive demonstration of the 7-phase cognitive cycle and 3 processing modes with detailed logging
 
 ## 📚 Original Swarm Examples
 
@@ -537,6 +538,7 @@ important_atoms = agentspace.get_most_important_atoms(limit)
 ## 📖 Documentation
 
 - [SwarmCog Architecture Guide](docs/SwarmCog_Architecture.md)
+- [Cognitive Model Guide](docs/CognitiveModelGuide.md) - Comprehensive explanation of the 7-phase cognitive cycle and 3 processing modes
 - [Cognitive Research Team Example](examples/cognitive_research_team.py)
 - API Documentation: See source code docstrings
 

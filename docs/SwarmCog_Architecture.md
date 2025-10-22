@@ -70,9 +70,11 @@ The Cognitive Microkernel implements the core cognitive processing system that e
 6. **Learning**: Update knowledge based on experiences
 7. **Reflection**: Evaluate performance and adapt behavior
 
+> **📖 Detailed Explanation**: For comprehensive information about the theoretical foundations, origins, and practical applications of the cognitive cycle and processing modes, see the [Cognitive Model Guide](CognitiveModelGuide.md).
+
 **Processing Modes:**
 - **Synchronous**: Sequential processing for predictable behavior
-- **Asynchronous**: Concurrent processing for responsiveness
+- **Asynchronous**: Concurrent processing for responsiveness  
 - **Distributed**: Multi-node processing for scalability
 
 **Usage Example:**
@@ -279,4 +281,7 @@ See the [Examples](../examples/) directory for working demonstrations:
 - `cognitive_research_team.py`: Multi-agent research team simulation
 - More examples coming soon...
 
-For detailed API documentation, see the source code docstrings and test files.
+## Additional Documentation
+
+- **[Cognitive Model Guide](CognitiveModelGuide.md)**: Deep dive into the 7-phase cognitive cycle and 3 processing modes, including theoretical foundations and practical examples
+- **API Documentation**: See the source code docstrings and test files
